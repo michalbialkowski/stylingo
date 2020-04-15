@@ -1,0 +1,21 @@
+.custom-control-radio.custom-control--centered {
+  padding: 0 !important;
+}
+
+.custom-control-radio.custom-control--centered .custom-control-label:before {
+  width: 2rem;
+  height: 2rem;
+  top: 0;
+  left: calc(50% - 1rem);
+}
+
+.custom-control-radio.custom-control--centered .custom-control-label:after {
+  background: white !important;
+  border-radius: 50%;
+  top: .5rem;
+  left: calc(50% - .5rem);
+}
+
+.custom-control-radio.custom-control--centered .custom-control-label > * {
+  margin-top: 2.5rem;
+}
