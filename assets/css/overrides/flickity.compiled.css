@@ -19,3 +19,7 @@
 .flickity--slider.arrows--white .flickity-prev-next-button svg * {
   fill: white;
 }
+
+.flickity--slider.hide--2 > .flickity--item + .flickity--item {
+  display: none;
+}
