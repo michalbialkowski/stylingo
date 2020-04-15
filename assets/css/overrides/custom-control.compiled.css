@@ -45,3 +45,7 @@
 .custom-checkbox.custom-control--centered .custom-control-label > * {
   margin-top: 2.5rem;
 }
+
+.custom-radio.label--photo:checked + span {
+  box-shadow: 0 0 0 0.5rem white,  0 0 1rem black;
+}
