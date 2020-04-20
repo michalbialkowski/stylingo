@@ -3,8 +3,9 @@ $(window).on('load', function() {
 		cellAlign: 'left',
 		contain: true,
 		freeScroll: false,
-		wrapAround: true,
+		wrapAround: false,
 		pageDots: false,
-		autoPlay: true
+		autoPlay: false,
+		prevNextButtons: false
 	});
 });
