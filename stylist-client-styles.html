@@ -17,334 +17,501 @@
     <link rel="stylesheet" href="assets/css/components/sizes.compiled.css">
     <link rel="stylesheet" href="assets/css/overrides/custom-control.compiled.css">
     <link rel="stylesheet" href="assets/css/overrides/flickity.compiled.css">
+    <link rel="stylesheet" href="assets/css/components/fullscreen-modal.compiled.css">
     <link rel="stylesheet" href="assets/css/overrides/form-row.compiled.css">
+    <link rel="stylesheet" href="assets/css/overrides/sticky.compiled.css">
 </head>
 
 <body>
-    <div>
+    <div class="pb-4 mb-4">
         <header class="border-bottom">
-            <div>
-                <nav class="navbar navbar-light navbar-expand-sm py-2">
-                    <div class="container"><a class="navbar-brand font-weight-bold h2 mb-0 py-0" href="index.html" style="font-size: 36px;">Stylingo</a><button data-toggle="collapse" class="navbar-toggler rounded-0 border-0 p-0" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                        <div
-                            class="collapse navbar-collapse" id="navcol-1">
-                            <ul class="nav navbar-nav align-items-baseline ml-auto">
-                                <li class="nav-item mr-2" role="presentation"><a class="nav-link text-dark font-weight-bold py-1" href="register.html"><i class="icon-user mr-2" style="font-size: 16px;"></i><span>Rejestracja</span></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link text-dark border border-dark py-1 font-weight-bold px-2" href="login.html"><span>Logowanie</span></a></li>
-                                <li class="nav-item" role="presentation"></li>
-                            </ul>
-                    </div>
-            </div>
-            </nav>
-    </div>
-    </header>
-    <main>
-        <div class="d-none d-lg-block py-3 border-bottom">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <ol class="breadcrumb rounded-0 p-0 bg-transparent mb-0">
-                            <li class="breadcrumb-item"><a class="text-secondary" href="index.html"><span>Strona główna</span></a></li>
-                            <li class="breadcrumb-item"><a class="text-secondary" href="page.html"><span>Lorem ipsum dolor</span></a></li>
-                        </ol>
+            <div class="py-3">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <h1 class="mb-0"><a class="text-dark navbar-brand mr-2" href="index.html"><span class="h1 mb-0">Stylingo</span></a></h1>
+                        </div>
+                        <div class="col-auto d-flex">
+                            <div class="d-flex align-items-center">
+                                <ul class="nav d-none d-md-flex align-items-baseline ml-auto mr-3 auth__menu">
+                                    <li class="nav-item d-none auth__menu__client"><a class="nav-link text-dark font-weight-bold py-1" href="client.html"><i class="icon-user mr-2" style="font-size: 16px;"></i><span>Moje konto</span></a></li>
+                                    <li class="nav-item d-none auth__menu__stylist"><a class="nav-link text-dark font-weight-bold py-1" href="stylist.html"><i class="icon-user mr-2" style="font-size: 16px;"></i><span>Moje konto</span></a></li>
+                                    <li class="nav-item mr-3 auth__menu__register"><a class="nav-link text-dark font-weight-bold p-0" href="register.html"><i class="icon-user mr-2" style="font-size: 16px;"></i><span>Rejestracja</span></a></li>
+                                    <li class="nav-item auth__menu__login"><a class="nav-link text-dark border border-dark py-1 font-weight-bold px-2" href="login.html"><span>Logowanie</span></a></li>
+                                </ul><button class="btn btn-lg rounded-0 p-0" type="button" data-toggle="modal" data-target="#modal__menu"><span class="h3 mb-0"><i class="fas fa-bars"></i></span></button></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="mb-3 mt-3">
-            <div class="d-lg-none">
-                <div class="border-bottom">
+        </header>
+        <main>
+            <div class="d-none d-lg-block py-3 border-bottom">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <ol class="breadcrumb rounded-0 p-0 bg-transparent mb-0">
+                                <li class="breadcrumb-item"><a class="text-secondary" href="index.html"><span>Strona główna</span></a></li>
+                                <li class="breadcrumb-item"><a class="text-secondary" href="page.html"><span>Lorem ipsum dolor</span></a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <div class="py-2">
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-center mb-3">
-                                    <h2 class="mb-3 mb-sm-0 h1">Panel stylisty</h2>
-                                    <div class="dropdown d-lg-none mb-0"><button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Moi klienci</button>
-                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="stylist.html">Moi klienci</a><a class="dropdown-item" role="presentation" href="#">Moje dane</a><a class="dropdown-item" role="presentation" href="#">Ustawienia</a>
-                                            <a
-                                                class="dropdown-item" role="presentation" href="#">Wyloguj</a>
-                                        </div>
-                                    </div>
+                                <div class="dropdown d-lg-none mb-0"><button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Moi klienci</button>
+                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="stylist.html">Przegląd</a><a class="dropdown-item" role="presentation" href="stylist-clients.html">Moi klienci</a><a class="dropdown-item" role="presentation" href="#">Moje dane</a>
+                                        <a
+                                            class="dropdown-item" role="presentation" href="#">Ustawienia</a><a class="dropdown-item auth__logout" role="presentation" href="#">Wyloguj</a></div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-3 border-bottom">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-auto"><a href="#"><span class="d-block content--box width--85"><span class="rounded-circle border">Text<img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/01/45/15/500_F_301451535_d4YWNawltFVgRAxK6FXFVhT2KjdeIEbl.jpg"></span></span></a></div>
-                            <div
-                                class="col">
-                                <h3>Adam Nowak</h3>
-                                <ul class="list-inline mb-2">
-                                    <li class="list-inline-item">24 lata</li>
-                                    <li class="list-inline-item">Warszawa</li>
+                                <ul class="nav nav-tabs d-none d-lg-flex mb-0">
+                                    <li class="nav-item"><a class="nav-link" href="stylist.html">Przegląd</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="stylist-clients.html">Moi klienci</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Moje dane</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Ustawienia</a></li>
+                                    <li class="nav-item ml-auto"><button class="btn btn-primary text-uppercase text-white auth__logout" type="button">Wyloguj</button></li>
                                 </ul>
-                                <div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle text-white" data-toggle="dropdown" aria-expanded="false" type="button">Stylizacje</button>
-                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="stylist-client.html">Przegląd</a><a class="dropdown-item" role="presentation" href="stylist-client-styles.html">Stylizacje</a><a class="dropdown-item" role="presentation"
-                                            href="stylist-client-messages.html">Wiadomości</a><a class="dropdown-item" role="presentation" href="stylist-client-quiz.html">Ankieta</a></div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="btn-group" role="group"><a class="btn btn-outline-dark" role="button" href="stylist-client-styles-create.html"><span>Nowa stylizacja</span><i class="la la-plus ml-2"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3 class="mb-0">Stylizacje</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6 mt-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
-                                        <div class="mb-3 mb-sm-0">
-                                            <h4>Moja stylizacja</h4>
-                                            <h6 class="text-muted mb-0">26 photos</h6>
-                                        </div><a class="btn btn-outline-dark btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
-                                </div>
-                                <div class="row no-gutters flickity--slider arrows--white hide--3">
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mt-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
-                                        <div class="mb-3 mb-sm-0">
-                                            <h4>Moja stylizacja</h4>
-                                            <h6 class="text-muted mb-0">26 photos</h6>
-                                        </div><a class="btn btn-outline-dark btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
-                                </div>
-                                <div class="row no-gutters flickity--slider arrows--white hide--3">
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mt-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
-                                        <div class="mb-3 mb-sm-0">
-                                            <h4>Moja stylizacja</h4>
-                                            <h6 class="text-muted mb-0">26 photos</h6>
-                                        </div><a class="btn btn-outline-dark btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
-                                </div>
-                                <div class="row no-gutters flickity--slider arrows--white hide--3">
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mt-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
-                                        <div class="mb-3 mb-sm-0">
-                                            <h4>Moja stylizacja</h4>
-                                            <h6 class="text-muted mb-0">26 photos</h6>
-                                        </div><a class="btn btn-outline-dark btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
-                                </div>
-                                <div class="row no-gutters flickity--slider arrows--white hide--3">
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
-                                    <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="d-none d-lg-block">
-            <div class="py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h2 class="mb-4 h1"><span>Panel stylisty</span></h2>
-                            <ul class="nav nav-tabs">
-                                <li class="nav-item"><a class="nav-link active" href="stylist.html">Moi klienci</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Moje dane</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Ustawienia</a></li>
-                                <li class="nav-item ml-auto"><a class="nav-link text-uppercase border-0 btn btn-primary text-white" href="#">Wyloguj</a></li>
-                            </ul>
-                            <div class="py-3">
-                                <div class="container">
-                                    <div class="row align-items-center">
-                                        <div class="col-auto"><a href="#"><span class="d-block content--box width--85"><span class="rounded-circle border">Text<img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/01/45/15/500_F_301451535_d4YWNawltFVgRAxK6FXFVhT2KjdeIEbl.jpg"></span></span></a></div>
-                                        <div
-                                            class="col">
-                                            <h3>Adam Nowak</h3>
-                                            <ul class="list-inline mb-0">
-                                                <li class="list-inline-item">24 lata</li>
-                                                <li class="list-inline-item">Warszawa</li>
-                                            </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="nav nav-pills">
-                            <li class="nav-item"><a class="nav-link" href="stylist-client.html">Przegląd</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="stylist-client-styles.html">Stylizacje</a></li>
-                            <li class="nav-item"><a class="nav-link" href="stylist-client-messages.html">Wiadomości</a></li>
-                            <li class="nav-item"><a class="nav-link" href="stylist-client-quiz.html">Ankieta</a></li>
-                        </ul>
-                        <div class="row">
-                            <div class="col py-3">
-                                <div class="d-flex justify-content-between align-items-baseline mb-2">
-                                    <h3 class="mb-0">Stylizacje</h3>
-                                    <ul class="nav nav-pills mb-0">
-                                        <li class="nav-item"><a class="nav-link p-0" href="stylist-client-styles-create.html"><i class="fas fa-plus mr-2"></i><span>Dodaj nowy zestaw</span></a></li>
+                <div>
+                    <div class="border-bottom"></div>
+                    <div id="sticker" class="py-3 border-bottom">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-auto"><a href="#"><span class="d-block content--box width--85"><span class="rounded-circle border">Text<img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/01/45/15/500_F_301451535_d4YWNawltFVgRAxK6FXFVhT2KjdeIEbl.jpg"></span></span></a></div>
+                                <div
+                                    class="col">
+                                    <h3>Adam Nowak</h3>
+                                    <ul class="list-inline mb-2">
+                                        <li class="list-inline-item">24 lata</li>
+                                        <li class="list-inline-item">Warszawa</li>
                                     </ul>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-4 col-xl-4 py-3">
-                                        <div class="card">
-                                            <div>
-                                                <div class="row no-gutters flickity--slider arrows--white hide--2">
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title"><a class="text-secondary" href="stylist-client-styles-create.html">Moja stylizacja</a></h4>
-                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                <div><a class="btn btn-primary btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-xl-4 py-3">
-                                        <div class="card">
-                                            <div>
-                                                <div class="row no-gutters flickity--slider arrows--white hide--2">
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title"><a class="text-secondary" href="stylist-client-styles-create.html">Moja stylizacja</a></h4>
-                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                <div><a class="btn btn-primary btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-xl-4 py-3">
-                                        <div class="card">
-                                            <div>
-                                                <div class="row no-gutters flickity--slider arrows--white hide--2">
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
-                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title"><a class="text-secondary" href="stylist-client-styles-create.html">Moja stylizacja</a></h4>
-                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                                <div><a class="btn btn-primary btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item"><a class="nav-link" href="stylist-client.html">Przegląd</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="stylist-client-styles.html">Stylizacje</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="stylist-client-messages.html">Wiadomości</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="stylist-client-quiz.html">Ankieta</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="mt-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="btn-group" role="group"><a class="btn btn-outline-dark" role="button" href="stylist-client-styles-create.html"><span>Nowa stylizacja</span><i class="la la-plus ml-2"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="mb-0">Stylizacje</h3>
+                                <div class="row d-lg-none">
+                                    <div class="col-12 col-md-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
+                                                    <div class="mb-3 mb-sm-0">
+                                                        <h4 class="mb-0">Moja stylizacja</h4>
+                                                    </div><a class="btn btn-outline-dark btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
+                                            </div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--3">
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
+                                                    <div class="mb-3 mb-sm-0">
+                                                        <h4 class="mb-0">Moja stylizacja</h4>
+                                                    </div><a class="btn btn-outline-dark btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
+                                            </div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--3">
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
+                                                    <div class="mb-3 mb-sm-0">
+                                                        <h4 class="mb-0">Moja stylizacja</h4>
+                                                    </div><a class="btn btn-outline-dark btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
+                                            </div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--3">
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
+                                                    <div class="mb-3 mb-sm-0">
+                                                        <h4 class="mb-0">Moja stylizacja</h4>
+                                                    </div><a class="btn btn-outline-dark btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
+                                            </div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--3">
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row d-sm-none d-lg-flex">
+                                    <div class="col-lg-4 col-xl-4 py-3">
+                                        <div class="card">
+                                            <div>
+                                                <div class="row no-gutters flickity--slider arrows--white hide--2">
+                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></a></span></div>
+                                                    <div
+                                                        class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></a></span></div>
+                                                <div
+                                                    class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></a></span></div>
+                                            <div
+                                                class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></a></span></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a class="text-secondary" href="stylist-client-styles-create.html">Moja stylizacja</a></h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    <div><a class="btn btn-primary btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 py-3">
+                            <div class="card">
+                                <div>
+                                    <div class="row no-gutters flickity--slider arrows--white hide--2">
+                                        <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></a></span></div>
+                                        <div
+                                            class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></a></span></div>
+                                    <div
+                                        class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></a></span></div>
+                                <div
+                                    class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></a></span></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a class="text-secondary" href="stylist-client-styles-create.html">Moja stylizacja</a></h4>
+                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        <div><a class="btn btn-primary btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
-        </div>
+            <div class="col-lg-4 col-xl-4 py-3">
+                <div class="card">
+                    <div>
+                        <div class="row no-gutters flickity--slider arrows--white hide--2">
+                            <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></a></span></div>
+                            <div
+                                class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></a></span></div>
+                        <div
+                            class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></a></span></div>
+                    <div
+                        class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="stylist-client-styles-create.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></a></span></div>
+            </div>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title"><a class="text-secondary" href="stylist-client-styles-create.html">Moja stylizacja</a></h4>
+        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+        <div><a class="btn btn-primary btn-sm" role="button" href="stylist-client-styles-create.html">Edytuj</a></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </main>
     <footer>
-        <div class="py-0 py-lg-3 border-top">
+        <div class="border-top py-3 mt-3">
             <div class="container">
-                <div class="row d-none d-lg-flex">
-                    <div class="col py-3">
-                        <h2 class="text-center text-lg-left h5 font-weight-bold">Stylingo</h2>
-                        <p class="text-center text-lg-left mb-0">Curabitur pretium nulla a magna interdum tincidunt. Aliquam mollis mauris sit amet maximus suscipit. Curabitur consequat volutpat felis, id fringilla felis. Nulla facilisi. Maecenas vehicula volutpat nibh. Sed purus tortor, ornare
-                            vitae turpis vel, pretium lacinia ante. Vestibulum ut tempor felis.<br></p>
-                    </div>
-                    <div class="col-12 col-lg-auto">
-                        <div class="row justify-content-center">
-                            <div class="col-sm-4 col-lg-auto py-3">
-                                <h3 class="text-center text-lg-left h5 font-weight-bold">Twoje konto</h3>
-                                <ul class="list-unstyled text-center text-lg-left mb-0">
-                                    <li><a class="text-left text-dark" href="client.html">Panel klienta</a></li>
-                                    <li><a class="text-dark" href="stylist.html">Panel stylisty</a></li>
-                                    <li><a class="text-dark" href="page.html">Proin porttitor</a></li>
-                                    <li><a class="text-dark" href="page.html">Nam gravida, augue</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-4 col-lg-auto py-3">
-                                <h3 class="text-center text-lg-left h5 font-weight-bold">O nas</h3>
-                                <ul class="list-unstyled text-center text-lg-left mb-0">
-                                    <li><a class="text-left text-dark" href="page.html">Lorem ipsum</a></li>
-                                    <li><a class="text-dark" href="page.html">Dolor sit amet</a></li>
-                                    <li><a class="text-dark" href="page.html">Consectetur adipiscing</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-auto py-3">
-                        <ul class="list-inline d-flex justify-content-center align-items-center mb-0">
-                            <li class="list-inline-item mr-4"><a class="h4 mb-0" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item mr-4"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item mr-0"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row justify-content-lg-between mt-0 mt-lg-3">
-                    <div class="col-lg-auto d-none d-lg-block order-1 order-lg-2 py-3">
-                        <ul class="list-inline d-flex justify-content-center mb-0">
-                            <li class="list-inline-item"><a href="page.html">Polityka prywatności</a></li>
-                            <li class="list-inline-item"><a href="page.html">Polityka cookies</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-auto order-2 order-lg-1 py-3">
-                        <ul class="list-inline d-flex d-lg-none justify-content-center">
-                            <li class="list-inline-item"><a href="stylist.html">Panel stylisty</a></li>
-                            <li class="list-inline-item"><a href="client.html">Panel klienta</a></li>
-                        </ul>
-                        <ul class="list-inline d-flex flex-column align-items-center flex-lg-row mb-0">
-                            <li class="list-inline-item">© 2020 Stylingo All rights reserved</li>
-                            <li class="list-inline-item">Projekt i realizacja:&nbsp;<a href="#">KDMC</a></li>
-                        </ul>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center"><button class="btn text-uppercase rounded-0 p-0" type="button" data-toggle="modal" data-target="#modal__menu"><i class="fas fa-plus-circle mr-2"></i><span>Więcej informacji</span></button></div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div id="section__page__modals">
+        <div class="modal fade mb-4 modal--styled modal--fullscreen" role="dialog" tabindex="-1" id="modal__menu">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header d-flex justify-content-end border-0 p-0">
+                        <div><button class="btn btn-link border-left border-bottom px-3 py-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="fas fa-times"></i></span></button></div><button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="container">
+                                <div class="mb-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="nav d-flex flex-column justify-content-center align-items-center ml-auto auth__menu">
+                                                <li class="nav-item d-none auth__menu__client"><a class="nav-link text-dark font-weight-bold py-1" href="client.html"><i class="icon-user mr-2" style="font-size: 16px;"></i><span>Moje konto</span></a></li>
+                                                <li class="nav-item d-none auth__menu__stylist"><a class="nav-link text-dark font-weight-bold py-1" href="stylist.html"><i class="icon-user mr-2" style="font-size: 16px;"></i><span>Moje konto</span></a></li>
+                                                <li class="nav-item auth__menu__register mb-2"><a class="nav-link text-dark font-weight-bold p-0" href="register.html"><i class="icon-user mr-2" style="font-size: 16px;"></i><span>Rejestracja</span></a></li>
+                                                <li class="nav-item auth__menu__login"><a class="nav-link text-dark border border-dark py-1 font-weight-bold px-2" href="login.html"><span>Logowanie</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="row">
+                                        <div class="col py-3">
+                                            <h2 class="text-center text-lg-left h5 font-weight-bold">Stylingo</h2>
+                                            <p class="text-center text-lg-left mb-0">Curabitur pretium nulla a magna interdum tincidunt. Aliquam mollis mauris sit amet maximus suscipit. Curabitur consequat volutpat felis, id fringilla felis. Nulla facilisi. Maecenas vehicula volutpat nibh. Sed
+                                                purus tortor, ornare vitae turpis vel, pretium lacinia ante. Vestibulum ut tempor felis.<br></p>
+                                        </div>
+                                        <div class="col-12 col-lg-auto">
+                                            <div class="row justify-content-center">
+                                                <div class="col-sm-4 col-lg-auto py-3">
+                                                    <h3 class="text-center text-lg-left h5 font-weight-bold">O nas</h3>
+                                                    <ul class="list-unstyled text-center text-lg-left mb-0">
+                                                        <li><a class="text-dark" href="page.html">Proin porttitor</a></li>
+                                                        <li><a class="text-dark" href="page.html">Nam gravida, augue</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-4 col-lg-auto py-3">
+                                                    <h3 class="text-center text-lg-left h5 font-weight-bold">Jak korzystać?</h3>
+                                                    <ul class="list-unstyled text-center text-lg-left mb-0">
+                                                        <li><a class="text-left text-dark" href="page.html">Lorem ipsum</a></li>
+                                                        <li><a class="text-dark" href="page.html">Dolor sit amet</a></li>
+                                                        <li><a class="text-dark" href="page.html">Consectetur adipiscing</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-auto py-3">
+                                            <ul class="list-inline d-flex justify-content-center align-items-center mb-0">
+                                                <li class="list-inline-item mr-4"><a class="h4 mb-0" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li class="list-inline-item mr-4"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-instagram"></i></a></li>
+                                                <li class="list-inline-item mr-0"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row justify-content-lg-between">
+                                        <div class="col-lg-auto d-none d-lg-block order-1 order-lg-2 py-3">
+                                            <ul class="list-inline d-flex justify-content-center mb-0">
+                                                <li class="list-inline-item"><a href="page.html">Polityka prywatności</a></li>
+                                                <li class="list-inline-item"><a href="page.html">Polityka cookies</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-auto order-2 order-lg-1 py-3">
+                                            <ul class="list-inline d-flex flex-column align-items-center flex-lg-row mb-0">
+                                                <li class="list-inline-item">© 2020 Stylingo All rights reserved</li>
+                                                <li class="list-inline-item">Projekt i realizacja:&nbsp;<a href="#">KDMC</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__product">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header d-flex justify-content-end border-0 p-0">
+                        <div><button class="btn btn-link border-left border-bottom px-3 py-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="fas fa-times"></i></span></button></div><button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                    <div class="col">
+                                        <h3><span class="mr-2">Garnitur</span><small class="text-black-50">Pierre Cardin</small></h3>
+                                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="lead"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
+                                        <div class="table-responsive">
+                                            <table class="table table-sm">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Rozmiar</td>
+                                                        <td>M</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kolor</td>
+                                                        <td>granatowy</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Materiał</td>
+                                                        <td>68% poliester, 30% wiskoza, 2% elastan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Podszewka</td>
+                                                        <td>100% poliester</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Stan</td>
+                                                        <td>standarsowy</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kształt kołnierza</td>
+                                                        <td>kołnierz rewers</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zapięcie</td>
+                                                        <td>guziki</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kieszenie</td>
+                                                        <td>kieszenie klapowe, kieszeń wewnętrzne</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-group flex-wrap w-100 rounded-0" role="group"><button class="btn btn-light text-uppercase text-left rounded-0 order--product" type="button"><span class="d-flex justify-content-center align-items-center w-100"><i class="fas fa-shopping-cart mr-2"></i><span class="text-nowrap font-weight-bold">Dodaj do zamówienia</span></span></button>
+                                            <button
+                                                class="btn btn-light text-uppercase text-left rounded-0" type="button"><span class="d-flex justify-content-center align-items-center w-100 mb-2"><img class="img-fluid" src="https://mosaic02.ztat.net/nvg/z-header-fragment/zalando-logo/logo_default.svg"></span><small class="d-flex justify-content-center align-items-center"><i class="fas fa-shopping-bag mr-2"></i><span class="text-nowrap font-weight-bold">Kup w sklepie</span></small></button>
+                                                <button
+                                                    class="btn btn-light text-uppercase text-left rounded-0w-100" type="button"><small class="d-flex justify-content-center align-items-center"><i class="fas fa-times mr-2"></i><span class="text-nowrap font-weight-bold">Nie zamawiaj razem z zestawem</span></small></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__order">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header d-flex justify-content-end border-0 p-0">
+                        <div><button class="btn btn-link border-left border-bottom px-3 py-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="fas fa-times"></i></span></button></div><button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                    <div class="col">
+                                        <div class="alert alert-primary" role="alert"><i class="fas fa-shopping-cart mr-2"></i><span>Produkt został dodany do zamówienia</span></div>
+                                        <h3><span class="mr-2">Garnitur</span><small class="text-black-50">Pierre Cardin</small></h3>
+                                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="lead mb-2"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
+                                        <div class="mt-0"><a class="btn rounded-0 p-0" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button"><i class="fas fa-angle-down mr-2"></i><span>Specyfikacja produktu</span></a>
+                                            <div
+                                                class="collapse pt-3" id="collapse-1">
+                                                <div class="table-responsive">
+                                                    <table class="table table-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Rozmiar</td>
+                                                                <td>M</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Kolor</td>
+                                                                <td>granatowy</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Materiał</td>
+                                                                <td>68% poliester, 30% wiskoza, 2% elastan</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Podszewka</td>
+                                                                <td>100% poliester</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stan</td>
+                                                                <td>standarsowy</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Kształt kołnierza</td>
+                                                                <td>kołnierz rewers</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Zapięcie</td>
+                                                                <td>guziki</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Kieszenie</td>
+                                                                <td>kieszenie klapowe, kieszeń wewnętrzne</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive mt-3">
+                                        <table class="table table-sm">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Produktów w zamówieniu</td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Wartość netto</td>
+                                                    <td>2569,10 zł</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Wartość brutto</td>
+                                                    <td>3159,99 zł</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Koszty wysyłki</td>
+                                                    <td>0 zł</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center"><button class="btn rounded-0 p-0 font-weight-bold" type="button">Kontynuuję zakupy</button><button class="btn btn-outline-dark rounded-0" type="button">Składam zamówienie</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/libs/js.cookie.js"></script>
+    <script src="assets/js/libs/jquery.sticky.js"></script>
     <script src="assets/js/libs/flickity.pkgd.min.js"></script>
+    <script src="assets/js/components/auth.js"></script>
     <script src="assets/js/components/flickity.js"></script>
+    <script src="assets/js/components/sticky.js"></script>
+    <script src="assets/js/components/order.js"></script>
 </body>
 
 </html>

@@ -62,14 +62,16 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <div class="dropdown d-lg-none mb-0"><button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Moi klienci</button>
-                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="stylist.html">Przegląd</a><a class="dropdown-item" role="presentation" href="stylist-clients.html">Moi klienci</a><a class="dropdown-item" role="presentation" href="#">Moje dane</a>
+                                <div class="dropdown d-lg-none mb-0"><button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Zestawy</button>
+                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="client.html">Przegląd</a><a class="dropdown-item" role="presentation" href="client-styles.html">Zestawy</a><a class="dropdown-item" role="presentation" href="client-messages.html">Wiadomości</a>
                                         <a
-                                            class="dropdown-item" role="presentation" href="#">Ustawienia</a><a class="dropdown-item auth__logout" role="presentation" href="#">Wyloguj</a></div>
+                                            class="dropdown-item" role="presentation" href="#">Mój stylista</a><a class="dropdown-item" role="presentation" href="#">Moje dane</a><a class="dropdown-item" role="presentation" href="#">Ustawienia</a><a class="dropdown-item auth__logout" role="presentation" href="#">Wyloguj</a></div>
                                 </div>
                                 <ul class="nav nav-tabs d-none d-lg-flex mb-0">
-                                    <li class="nav-item"><a class="nav-link" href="stylist.html">Przegląd</a></li>
-                                    <li class="nav-item"><a class="nav-link active" href="stylist-clients.html">Moi klienci</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="client.html">Przegląd</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="client-styles.html">Zestawy</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="client-messages.html">Wiadomości</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Mój stylista</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Moje dane</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Ustawienia</a></li>
                                     <li class="nav-item ml-auto"><button class="btn btn-primary text-uppercase text-white auth__logout" type="button">Wyloguj</button></li>
@@ -78,87 +80,153 @@
                         </div>
                     </div>
                 </div>
-                <div id="sticker">
+                <div>
                     <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-auto"><a href="#"><span class="d-block content--box width--85"><span class="rounded-circle border">Text<img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/01/45/15/500_F_301451535_d4YWNawltFVgRAxK6FXFVhT2KjdeIEbl.jpg"></span></span></a></div>
-                            <div
-                                class="col">
-                                <h3>Adam Nowak</h3>
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">24 lata</li>
-                                    <li class="list-inline-item">Warszawa</li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link" href="stylist-client.html">Przegląd</a></li>
-                                <li class="nav-item"><a class="nav-link" href="stylist-client-styles.html">Stylizacje</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="stylist-client-messages.html">Wiadomości</a></li>
-                                <li class="nav-item"><a class="nav-link" href="stylist-client-quiz.html">Ankieta</a></li>
-                            </ul>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <form class="form-inline">
+                                            <div class="input-group"><input class="form-control" type="text" placeholder="Wyszukaj zestaw">
+                                                <div class="input-group-append"><button class="btn btn-primary text-uppercase text-white" type="button">Szukaj</button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <h3 class="mb-0">Proponowane zestawy</h3>
+                                <div class="row d-lg-none">
+                                    <div class="col-12 col-md-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
+                                                    <div class="mb-3 mb-sm-0">
+                                                        <h4 class="mb-0">Moja stylizacja</h4>
+                                                    </div><a class="btn btn-outline-dark btn-sm" role="button" href="client-styles-set.html">Zobacz</a></div>
+                                            </div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--3">
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
+                                                    <div class="mb-3 mb-sm-0">
+                                                        <h4 class="mb-0">Moja stylizacja</h4>
+                                                    </div><a class="btn btn-outline-dark btn-sm" role="button" href="client-styles-set.html">Zobacz</a></div>
+                                            </div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--3">
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
+                                                    <div class="mb-3 mb-sm-0">
+                                                        <h4 class="mb-0">Moja stylizacja</h4>
+                                                    </div><a class="btn btn-outline-dark btn-sm" role="button" href="client-styles-set.html">Zobacz</a></div>
+                                            </div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--3">
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-start flex-sm-row justify-content-sm-between align-items-sm-baseline">
+                                                    <div class="mb-3 mb-sm-0">
+                                                        <h4 class="mb-0">Moja stylizacja</h4>
+                                                    </div><a class="btn btn-outline-dark btn-sm" role="button" href="client-styles-set.html">Zobacz</a></div>
+                                            </div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--3">
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-4 col-md-3 p-0 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row d-none d-lg-flex">
+                                    <div class="col-md-6 col-lg-4 py-3">
+                                        <div class="card">
+                                            <div>
+                                                <div class="row no-gutters flickity--slider arrows--white hide--2">
+                                                    <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="client-styles-set.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></a></span></div>
+                                                    <div
+                                                        class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                                <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                                <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title"><a class="text-secondary" href="client-styles-set.html">Moja stylizacja</a></h4>
+                                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            <div><a class="btn btn-secondary btn-sm mr-2" role="button" href="client-styles-set.html">Zobacz</a><button class="btn btn-primary btn-sm" type="button">Podoba mi się</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 py-3">
+                                    <div class="card">
+                                        <div>
+                                            <div class="row no-gutters flickity--slider arrows--white hide--2">
+                                                <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="client-styles-set.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></a></span></div>
+                                                <div
+                                                    class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                            <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                            <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a class="text-secondary" href="client-styles-set.html">Moja stylizacja</a></h4>
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <div><a class="btn btn-secondary btn-sm mr-2" role="button" href="client-styles-set.html">Zobacz</a><button class="btn btn-primary btn-sm" type="button">Podoba mi się</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 py-3">
+                                <div class="card">
+                                    <div>
+                                        <div class="row no-gutters flickity--slider arrows--white hide--2">
+                                            <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><a href="client-styles-set.html"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></a></span></div>
+                                            <div
+                                                class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span></div>
+                                        <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span></div>
+                                        <div class="col-12 p-0 flickity--item"><span class="d-block content--box format--3-2"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a class="text-secondary" href="client-styles-set.html">Moja stylizacja</a></h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    <div><a class="btn btn-secondary btn-sm mr-2" role="button" href="client-styles-set.html">Zobacz</a><button class="btn btn-primary btn-sm" type="button">Podoba mi się</button></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="container">
-                    <div class="row mt-3">
-                        <div class="col-lg-3">
-                            <div class="dropdown d-lg-none mb-3"><button class="btn btn-primary dropdown-toggle text-white" data-toggle="dropdown" aria-expanded="false" type="button">Przychodzące</button>
-                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Przychodzące</a><a class="dropdown-item" role="presentation" href="#">Wysłane</a><a class="dropdown-item" role="presentation" href="#">Kosz</a></div>
-                            </div>
-                            <ul class="list-group d-none d-lg-flex">
-                                <li class="list-group-item active"><i class="fas fa-inbox mr-2"></i><a class="text-white" href="stylist-client-messages.html">Przychodzące</a></li>
-                                <li class="list-group-item"><i class="fas fa-paper-plane mr-2"></i><a class="text-dark" href="stylist-client-messages.html">Wysłane</a></li>
-                                <li class="list-group-item"><i class="far fa-trash-alt mr-2"></i><a class="text-dark" href="stylist-client-messages.html">Kosz</a></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Temat</th>
-                                            <th>Data</th>
-                                            <th>Akcje</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Lorem ipsum dolor</td>
-                                            <td>01.04.2020</td>
-                                            <td>
-                                                <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="far fa-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="fas fa-reply"></i></button><button class="btn btn-outline-dark"
-                                                        type="button"><i class="far fa-trash-alt"></i></button></div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Curabitur pretium nulla a magna interdum tincidunt</td>
-                                            <td>28.03.2020</td>
-                                            <td>
-                                                <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="far fa-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="fas fa-reply"></i></button><button class="btn btn-outline-dark"
-                                                        type="button"><i class="far fa-trash-alt"></i></button></div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sed purus tortor, ornare vitae turpis vel</td>
-                                            <td>21.03.2020</td>
-                                            <td>
-                                                <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="far fa-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="fas fa-reply"></i></button><button class="btn btn-outline-dark"
-                                                        type="button"><i class="far fa-trash-alt"></i></button></div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    </div>
+    </div>
+    <div class="bg-white fixed-bottom py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col"><a class="btn btn-primary btn-block btn-lg text-uppercase text-white rounded-0" role="button" href="quiz.html">Rozwiąż Quiz</a></div>
             </div>
-            <div class="d-none d-lg-block"></div>
+        </div>
     </div>
     </main>
     <footer>

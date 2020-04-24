@@ -1,0 +1,22 @@
+.modal--fullscreen .modal-dialog {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 0;
+}
+
+.modal--fullscreen .modal-content {
+  min-height: 100vh;
+}
+
+.modal--styled .modal-dialog .modal-header > button {
+  display: none;
+}
+
+.modal--styled .modal-content {
+  border: 0;
+}

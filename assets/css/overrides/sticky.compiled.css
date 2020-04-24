@@ -1,0 +1,10 @@
+#sticker {
+  z-index: 1000 !important;
+  background: white;
+}
+
+@media (min-width: 992px) {
+  #sticker {
+    position: static !important;
+  }
+}
