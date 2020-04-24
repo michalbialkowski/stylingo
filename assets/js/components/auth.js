@@ -16,7 +16,7 @@ $('.auth__logout').on('click', function() {
 	$('.auth__menu__register').removeClass('d-none');
 	$('.auth__menu__login').removeClass('d-none');
 	
-	location.href = '/index.html';
+	location.href = 'index.html';
 });
 
 auth();
