@@ -61,7 +61,7 @@
             </div>
         </header>
         <main>
-            <div class="mb-3 mt-3">
+            <div>
                 <div id="sticker" class="py-3">
                     <div class="container">
                         <div class="row align-items-center">
@@ -70,8 +70,8 @@
                                 class="col">
                                 <h3>Adam Nowak</h3>
                                 <div class="d-block d-lg-none" id="stylist__client__menu">
-                                    <div class="btn-group btn-group-sm" role="group"><a class="btn btn-outline-dark" role="button" href="stylist-clients.html"><i class="fas fa-chevron-left"></i></a>
-                                        <div class="dropdown btn-group" role="group"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Ankieta</button>
+                                    <div class="btn-group btn-group-sm" role="group"><a class="btn btn-outline-dark" role="button" href="stylist-client-styles.html"><i class="fas fa-chevron-left"></i></a>
+                                        <div class="dropdown btn-group" role="group"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Edycja stylizacji</button>
                                             <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="stylist-client-styles.html">Stylizacje</a><a class="dropdown-item" role="presentation" href="stylist-client-messages.html">Wiadomości</a><a class="dropdown-item"
                                                     role="presentation" href="stylist-client-quiz.html">Ankieta</a></div>
                                         </div>
@@ -86,177 +86,83 @@
                     <div class="row">
                         <div class="col">
                             <ul class="nav nav-tabs">
-                                <li class="nav-item"><a class="nav-link" href="stylist-clients.html"><i class="fas fa-chevron-left"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="stylist-client-styles.html"><i class="fas fa-chevron-left"></i></a></li>
+                                <li class="nav-item"><a class="nav-link active" href="stylist-client-style.html">Edycja stylizacji</a></li>
                                 <li class="nav-item"><a class="nav-link" href="stylist-client-styles.html">Stylizacje</a></li>
                                 <li class="nav-item"><a class="nav-link" href="stylist-client-messages.html">Wiadomości</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="stylist-client-quiz.html">Ankieta</a></li>
+                                <li class="nav-item"><a class="nav-link" href="stylist-client-quiz.html">Ankieta</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="mt-3">
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <h2 class="mb-3">Sekcja 1</h2>
-                                    <div>
-                                        <div class="d-lg-none" role="tablist" id="accordion-1">
-                                            <div class="card">
-                                                <div class="card-header" role="tab">
-                                                    <h5 class="mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">Id fringilla felis?</a></h5>
-                                                </div>
-                                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
-                                                    <div class="card-body">
-                                                        <p class="card-text">Curabitur pretium nulla a magna interdum tincidunt. Aliquam mollis mauris sit amet maximus suscipit. Curabitur consequat volutpat felis, id fringilla felis. Nulla facilisi. Maecenas vehicula volutpat
-                                                            nibh. Sed purus tortor, ornare vitae turpis vel, pretium lacinia ante. Vestibulum ut tempor felis.<br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" role="tab">
-                                                    <h5 class="mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2">Dolor o lorem?<br></a></h5>
-                                                </div>
-                                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
-                                                    <div class="card-body">
-                                                        <p class="card-text">Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque
-                                                            nibh velit eu ante.<br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive d-none d-lg-block">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="width--200">Pytanie</th>
-                                                        <th>Odpowiedź</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><span class="h5">Id fringilla felis?</span></td>
-                                                        <td>Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque
-                                                            nibh velit eu ante.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><span class="h5">Dolor o lorem?</span></td>
-                                                        <td>Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque
-                                                            nibh velit eu ante.</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                            <form>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="input-group input-group-lg"><input class="form-control" type="text" placeholder="Nazwa stylizacji" value="Moja stylizacja">
+                                            <div class="input-group-append"><button class="btn btn-primary" type="button">Zapisz</button></div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <h2 class="mb-3">Sekcja 2</h2>
-                                    <div></div>
-                                    <div class="d-lg-none" role="tablist" id="accordion-2">
-                                        <div class="card">
-                                            <div class="card-header" role="tab">
-                                                <h5 class="mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-1" href="#accordion-2 .item-1">Id fringilla felis?</a></h5>
-                                            </div>
-                                            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-2">
-                                                <div class="card-body">
-                                                    <p class="card-text">Curabitur pretium nulla a magna interdum tincidunt. Aliquam mollis mauris sit amet maximus suscipit. Curabitur consequat volutpat felis, id fringilla felis. Nulla facilisi. Maecenas vehicula volutpat
-                                                        nibh. Sed purus tortor, ornare vitae turpis vel, pretium lacinia ante. Vestibulum ut tempor felis.<br></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" role="tab">
-                                                <h5 class="mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-2" href="#accordion-2 .item-2">Dolor o lorem?<br></a></h5>
-                                            </div>
-                                            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-2">
-                                                <div class="card-body">
-                                                    <p class="card-text">Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque nibh
-                                                        velit eu ante.<br></p>
-                                                </div>
-                                            </div>
+                                <div class="form-row flickity--slider arrows--white hide--3 mt-3">
+                                    <div class="col-6 col-sm-4 col-md-3 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg"></span>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="la la-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="la la-trash"></i></button></div>
                                         </div>
                                     </div>
-                                    <div class="table-responsive d-none d-lg-block">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="width--200">Pytanie</th>
-                                                    <th>Odpowiedź</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="h5">Id fringilla felis?</span></td>
-                                                    <td>Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque nibh
-                                                        velit eu ante.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="h5">Dolor o lorem?</span></td>
-                                                    <td>Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque nibh
-                                                        velit eu ante.</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <h2 class="mb-3">Sekcja 3</h2>
-                                    <div>
-                                        <div class="d-lg-none" role="tablist" id="accordion-3">
-                                            <div class="card">
-                                                <div class="card-header" role="tab">
-                                                    <h5 class="mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-1" href="#accordion-3 .item-1">Id fringilla felis?</a></h5>
-                                                </div>
-                                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-3">
-                                                    <div class="card-body">
-                                                        <p class="card-text">Curabitur pretium nulla a magna interdum tincidunt. Aliquam mollis mauris sit amet maximus suscipit. Curabitur consequat volutpat felis, id fringilla felis. Nulla facilisi. Maecenas vehicula volutpat
-                                                            nibh. Sed purus tortor, ornare vitae turpis vel, pretium lacinia ante. Vestibulum ut tempor felis.<br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" role="tab">
-                                                    <h5 class="mb-0"><a class="text-dark" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-2" href="#accordion-3 .item-2">Dolor o lorem?<br></a></h5>
-                                                </div>
-                                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-3">
-                                                    <div class="card-body">
-                                                        <p class="card-text">Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque
-                                                            nibh velit eu ante.<br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="col-6 col-sm-4 col-md-3 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="la la-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="la la-trash"></i></button></div>
                                         </div>
-                                        <div class="table-responsive d-none d-lg-block">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="width--200">Pytanie</th>
-                                                        <th>Odpowiedź</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><span class="h5">Id fringilla felis?</span></td>
-                                                        <td>Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque
-                                                            nibh velit eu ante.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><span class="h5">Dolor o lorem?</span></td>
-                                                        <td>Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum. Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque
-                                                            nibh velit eu ante.</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg"></span>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="la la-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="la la-trash"></i></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 flickity--item"><span class="d-block content--box"><img class="img-fluid" src="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg"></span>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="la la-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="la la-trash"></i></button></div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-row mt-3">
+                                    <div class="col">
+                                        <ul class="nav nav-tabs flickity--slider">
+                                            <li class="nav-item flickity--item"><a class="nav-link active" href="#">Buty</a></li>
+                                            <li class="nav-item flickity--item"><a class="nav-link" href="#">Spódnice</a></li>
+                                            <li class="nav-item flickity--item"><a class="nav-link" href="#">Bluzki</a></li>
+                                            <li class="nav-item flickity--item"><a class="nav-link" href="#">Akcesoria</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-row mt-3">
+                                    <div class="col-6 col-sm-4 col-md-3 mb-3"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="la la-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="la la-plus"></i></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 mb-3"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="la la-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="la la-plus"></i></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 mb-3"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="la la-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="la la-plus"></i></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-md-3 mb-3"><span class="d-block content--box"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg"></span>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark" type="button"><i class="la la-eye"></i></button><button class="btn btn-outline-dark" type="button"><i class="la la-plus"></i></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
