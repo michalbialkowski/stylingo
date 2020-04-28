@@ -1,3 +1,30 @@
 main {
   padding-top: 70px;
 }
+
+@media screen and (max-width: 575.98px) {
+  #navbar__nav {
+    height: 50px !important;
+  }
+  main {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #navbar__nav {
+    height: 55px !important;
+  }
+  main {
+    padding-top: 55px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #navbar__nav {
+    height: 60px !important;
+  }
+  main {
+    padding-top: 60px;
+  }
+}
