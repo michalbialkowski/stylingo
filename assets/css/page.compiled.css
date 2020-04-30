@@ -28,3 +28,8 @@ main {
     padding-top: 60px;
   }
 }
+
+#modal__quiz .modal-content {
+  max-height: calc(100vh - 3.5rem);
+  overflow: scroll;
+}
