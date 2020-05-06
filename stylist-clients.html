@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/components/sizes.compiled.css">
     <link rel="stylesheet" href="assets/css/components/fullscreen-modal.compiled.css">
     <link rel="stylesheet" href="assets/css/page.compiled.css">
+    <link rel="stylesheet" href="assets/css/overrides/ckeditor.compiled.css">
 </head>
 
 <body>
@@ -73,7 +74,10 @@
                             </div>
                             <div class="col-12 col-lg-auto mt-3">
                                 <form class="form-inline">
-                                    <div class="input-group"><input class="form-control" type="text" placeholder="Wyszukaj klienta">
+                                    <div class="dropdown"><button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-th"></i><span class="ml-2">Kafelki</span></button>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Kafelki</a><a class="dropdown-item" role="presentation" href="#">Lista</a></div>
+                                    </div>
+                                    <div class="input-group ml-3"><input class="form-control" type="text" placeholder="Wyszukaj klienta">
                                         <div class="input-group-append"><button class="btn btn-primary text-uppercase text-white" type="button">Szukaj</button></div>
                                     </div>
                                 </form>
@@ -643,10 +647,12 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
     <script src="assets/js/libs/js.cookie.js"></script>
     <script src="assets/js/libs/jquery.sticky.js"></script>
     <script src="assets/js/libs/flickity.pkgd.min.js"></script>
     <script src="assets/js/libs/jquery.fancybox.js"></script>
+    <script src="assets/js/components/editor.js"></script>
     <script src="assets/js/components/auth.js"></script>
     <script src="assets/js/components/flickity.js"></script>
     <script src="assets/js/components/sticky.js"></script>

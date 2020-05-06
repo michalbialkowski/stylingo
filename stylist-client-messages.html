@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/components/sizes.compiled.css">
     <link rel="stylesheet" href="assets/css/components/fullscreen-modal.compiled.css">
     <link rel="stylesheet" href="assets/css/page.compiled.css">
+    <link rel="stylesheet" href="assets/css/overrides/ckeditor.compiled.css">
 </head>
 
 <body>
@@ -63,7 +64,7 @@
         </header>
         <main>
             <div>
-                <div id="sticker" class="py-3">
+                <div class="bg-light py-3 border-bottom" id="sticker">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-auto"><a href="#"><span class="d-block content--box width--75"><span class="rounded-circle border"><img class="img-fluid" src="https://as2.ftcdn.net/jpg/03/01/45/15/500_F_301451535_d4YWNawltFVgRAxK6FXFVhT2KjdeIEbl.jpg"></span></span></a></div>
@@ -84,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-none d-lg-block">
+            <div class="d-none d-lg-block mt-3">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -643,10 +644,12 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
     <script src="assets/js/libs/js.cookie.js"></script>
     <script src="assets/js/libs/jquery.sticky.js"></script>
     <script src="assets/js/libs/flickity.pkgd.min.js"></script>
     <script src="assets/js/libs/jquery.fancybox.js"></script>
+    <script src="assets/js/components/editor.js"></script>
     <script src="assets/js/components/auth.js"></script>
     <script src="assets/js/components/flickity.js"></script>
     <script src="assets/js/components/sticky.js"></script>

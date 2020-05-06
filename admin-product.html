@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/components/sizes.compiled.css">
     <link rel="stylesheet" href="assets/css/components/fullscreen-modal.compiled.css">
     <link rel="stylesheet" href="assets/css/page.compiled.css">
+    <link rel="stylesheet" href="assets/css/overrides/ckeditor.compiled.css">
 </head>
 
 <body>
@@ -38,8 +39,8 @@
                                     <ul class="nav d-none d-lg-flex">
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-pages.html"><span>CMS</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Asortyment</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Styliści</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Ankieta</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-stylists.html"><span>Styliści</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-quiz.html"><span>Ankieta</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Ustawienia</span></a></li>
                                     </ul><button class="btn btn-lg d-lg-none rounded-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#collapse__menu"><span class="h3 mb-0"><i class="fas fa-bars"></i></span></button></div>
                             </div>
@@ -65,18 +66,45 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="pb--90">
             <div>
-                <div class="py-3">
+                <div class="bg-light py-3 border-bottom" id="sticker">
                     <div class="container">
                         <div class="row">
-                            <div class="col order-1 order-lg-2">
+                            <div class="col">
+                                <h2 class="h3 mb-2"><a class="text-dark mr-2" href="admin-product.html">Garnitur</a></h2>
+                                <ul class="list-inline mb-2">
+                                    <li class="list-inline-item">Marka: Pierre Cardin</li>
+                                    <li class="list-inline-item">Rozmiar: M</li>
+                                </ul>
+                                <div class="btn-group btn-group-sm mb-0" role="group">
+                                    <div class="dropdown btn-group flex-wrap" role="group"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Mężczyźni</button>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin-products.html">Kobiety</a><a class="dropdown-item" role="presentation" href="admin-products.html">Mężczyźni</a></div>
+                                    </div>
+                                    <div class="dropdown btn-group flex-wrap" role="group"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Odzież</button>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin-products.html">Obuwie</a><a class="dropdown-item" role="presentation" href="admin-products.html">Odzież</a></div>
+                                    </div>
+                                    <div class="dropdown btn-group flex-wrap" role="group"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Garnitury</button>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin-products.html">Koszulki</a><a class="dropdown-item" role="presentation" href="admin-products.html">Koszule</a><a class="dropdown-item" role="presentation"
+                                                href="admin-products.html">Bluzy</a><a class="dropdown-item" role="presentation" href="admin-products.html">Spodnie</a><a class="dropdown-item" role="presentation" href="admin-products.html">Marynarki</a>
+                                            <a
+                                                class="dropdown-item" role="presentation" href="admin-products.html">Garnitury</a><a class="dropdown-item" role="presentation" href="admin-products.html">Jeansy</a><a class="dropdown-item" role="presentation" href="admin-products.html">Bielizna</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col order-1 order-lg-2 py-3">
                                 <form>
                                     <div class="form-row">
                                         <div class="col">
                                             <div class="form-group">
                                                 <div class="form-row">
-                                                    <div class="col-sm-4 col-md-3"><label class="col-form-label">Nazwa</label></div>
+                                                    <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Nazwa</label></div>
                                                     <div class="col"><input class="form-control" type="text" value="Garnitur"></div>
                                                 </div>
                                             </div>
@@ -86,7 +114,31 @@
                                         <div class="col">
                                             <div class="form-group">
                                                 <div class="form-row">
-                                                    <div class="col-sm-4 col-md-3"><label class="col-form-label">Marka</label></div>
+                                                    <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Kategoria</label></div>
+                                                    <div class="col">
+                                                        <div class="btn-group" role="group">
+                                                            <div class="dropdown btn-group" role="group"><button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Płeć&nbsp;</button>
+                                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#"><span>Kobiety</span></a><a class="dropdown-item" role="presentation" href="#"><span>Mężczyźni</span></a></div>
+                                                            </div>
+                                                            <div class="dropdown btn-group" role="group"><button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Mężczyźni&nbsp;</button>
+                                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#"><span>Obuwie</span></a><a class="dropdown-item" role="presentation" href="#"><span>Odzież</span></a></div>
+                                                            </div>
+                                                            <div class="dropdown btn-group" role="group"><button class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Odzież&nbsp;</button>
+                                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#"><span>Koszulki</span></a><a class="dropdown-item" role="presentation" href="#"><span>Koszule</span></a><a class="dropdown-item" role="presentation"
+                                                                        href="#"><span>Bluzy</span></a><a class="dropdown-item" role="presentation" href="#"><span>Spodnie</span></a><a class="dropdown-item" role="presentation" href="#"><span>Marynarki</span></a>
+                                                                    <a
+                                                                        class="dropdown-item" role="presentation" href="#"><span>Garnitury</span></a><a class="dropdown-item" role="presentation" href="#"><span>Jeansy</span></a><a class="dropdown-item" role="presentation" href="#"><span>Bielizna</span></a></div>
+                                                            </div><button class="btn btn-dark" type="button">Garnitury</button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <div class="form-row">
+                                                    <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Marka</label></div>
                                                     <div class="col"><select class="form-control"><option value="" selected=""></option><option value="13" selected="">Pierre Cardin</option><option value="14">Wólczanka</option></select></div>
                                                 </div>
                                             </div>
@@ -96,7 +148,7 @@
                                         <div class="col">
                                             <div class="form-group">
                                                 <div class="form-row">
-                                                    <div class="col-sm-4 col-md-3"><label class="col-form-label">Rozmiar</label></div>
+                                                    <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Rozmiar</label></div>
                                                     <div class="col"><select class="form-control"><option value="" selected=""></option><option value="13">S</option><option value="14" selected="">M</option><option value="">L</option><option value="">XL</option><option value="">XXL</option></select></div>
                                                 </div>
                                             </div>
@@ -106,17 +158,7 @@
                                         <div class="col">
                                             <div class="form-group">
                                                 <div class="form-row">
-                                                    <div class="col-sm-4 col-md-3"><label class="col-form-label">Kolor</label></div>
-                                                    <div class="col"><select class="form-control"><option value="12" selected=""></option><option value="13">czarny</option><option value="14">szary</option><option value="" selected="">granatowy</option></select></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <div class="form-row">
-                                                    <div class="col-sm-4 col-md-3"><label class="col-form-label">Cena</label></div>
+                                                    <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Cena</label></div>
                                                     <div class="col">
                                                         <div class="input-group"><input class="form-control" type="text" value="2149.99">
                                                             <div class="input-group-append"><span class="input-group-text">zł</span></div>
@@ -130,8 +172,106 @@
                                         <div class="col">
                                             <div class="form-group">
                                                 <div class="form-row">
-                                                    <div class="col-sm-4 col-md-3"><label class="col-form-label">Opis</label></div>
-                                                    <div class="col"><textarea class="form-control" rows="6">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</textarea></div>
+                                                    <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Krótki opis</label></div>
+                                                    <div class="col"><textarea class="form-control" rows="4">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</textarea></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <div class="form-row">
+                                                    <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Pełny opis</label></div>
+                                                    <div class="col-sm-9 col-md-9 col-lg-10 col-xl-10"><textarea class="form-control" id="editor" rows="4">&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</textarea></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <div class="form-row">
+                                                    <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Cechy</label></div>
+                                                    <div class="col">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-sm">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Atrybut</th>
+                                                                        <th>Wartość</th>
+                                                                        <th class="text-right">Akcja</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Kolor</td>
+                                                                        <td>granatowy</td>
+                                                                        <td>
+                                                                            <div class="d-flex justify-content-end"><button class="btn btn-sm" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm"
+                                                                                    type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Materiał</td>
+                                                                        <td>68% poliester, 30% wiskoza, 2% elastan</td>
+                                                                        <td>
+                                                                            <div class="d-flex justify-content-end"><button class="btn btn-sm" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm"
+                                                                                    type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Podszewka</td>
+                                                                        <td>100% poliester<br></td>
+                                                                        <td>
+                                                                            <div class="d-flex justify-content-end"><button class="btn btn-sm" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm"
+                                                                                    type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Stan</td>
+                                                                        <td>standardowy</td>
+                                                                        <td>
+                                                                            <div class="d-flex justify-content-end"><button class="btn btn-sm" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm"
+                                                                                    type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Kształt kołnierza<br></td>
+                                                                        <td>kołnierz rewers<br></td>
+                                                                        <td>
+                                                                            <div class="d-flex justify-content-end"><button class="btn btn-sm" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm"
+                                                                                    type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Zapięcie</td>
+                                                                        <td>guziki</td>
+                                                                        <td>
+                                                                            <div class="d-flex justify-content-end"><button class="btn btn-sm" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm"
+                                                                                    type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Kieszenie<br></td>
+                                                                        <td>kieszenie klapowe, kieszenie wewnętrzne<br></td>
+                                                                        <td>
+                                                                            <div class="d-flex justify-content-end"><button class="btn btn-sm" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm"
+                                                                                    type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><input class="form-control form-control-sm" type="text" placeholder="Atrybut"></td>
+                                                                        <td><input class="form-control form-control-sm" type="text" placeholder="Wartość"></td>
+                                                                        <td>
+                                                                            <div class="d-flex justify-content-end"><button class="btn btn-outline-dark btn-sm d-flex align-items-center" type="button"><i class="fas fa-plus mr-2"></i><span>Dodaj</span></button></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,10 +290,21 @@
                     </div>
                     <div class="border p-3 mt-3">
                         <h3 class="h4 mb-3">Dodaj zdjęcia</h3>
+                        <div class="bg-light border p-3">
+                            <p class="text-center text-black-50 d-flex justify-content-center align-items-center mb-0"><i class="fas fa-upload mr-3" style="font-size: 24px;"></i><span class="font-weight-bold">Upuść tutaj pliki, <br>aby dodać je do galerii</span></p>
+                        </div>
+                        <div class="mt-3">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-file-image mr-2"></i><span>DSC_0135.jpg</span></li>
+                                <li><i class="far fa-file-image mr-2"></i><span>DSC_0136.jpg</span></li>
+                                <li><i class="far fa-file-image mr-2"></i><span>DSC_0137.jpg</span></li>
+                                <li><i class="far fa-file-image mr-2"></i><span>DSC_0138.jpg</span></li>
+                            </ul>
+                        </div>
                         <form>
                             <div class="form-row">
                                 <div class="col">
-                                    <div class="form-group mb-0"><button class="btn btn-outline-dark mr-2" type="button">Wybierz pliki</button><button class="btn btn-primary text-uppercase text-white" type="button">Dodaj</button></div>
+                                    <div class="form-group mb-0"><button class="btn btn-outline-dark" type="button" disabled="">Dodaj pliki</button></div>
                                 </div>
                             </div>
                         </form>
@@ -565,10 +716,12 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
     <script src="assets/js/libs/js.cookie.js"></script>
     <script src="assets/js/libs/jquery.sticky.js"></script>
     <script src="assets/js/libs/flickity.pkgd.min.js"></script>
     <script src="assets/js/libs/jquery.fancybox.js"></script>
+    <script src="assets/js/components/editor.js"></script>
     <script src="assets/js/components/auth.js"></script>
     <script src="assets/js/components/flickity.js"></script>
     <script src="assets/js/components/sticky.js"></script>

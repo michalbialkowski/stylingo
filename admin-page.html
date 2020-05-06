@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/components/sizes.compiled.css">
     <link rel="stylesheet" href="assets/css/components/fullscreen-modal.compiled.css">
     <link rel="stylesheet" href="assets/css/page.compiled.css">
+    <link rel="stylesheet" href="assets/css/overrides/ckeditor.compiled.css">
 </head>
 
 <body>
@@ -38,8 +39,8 @@
                                     <ul class="nav d-none d-lg-flex">
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-pages.html"><span>CMS</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Asortyment</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Styliści</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Ankieta</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-stylists.html"><span>Styliści</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-quiz.html"><span>Ankieta</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Ustawienia</span></a></li>
                                     </ul><button class="btn btn-lg d-lg-none rounded-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#collapse__menu"><span class="h3 mb-0"><i class="fas fa-bars"></i></span></button></div>
                             </div>
@@ -77,7 +78,7 @@
                                             <div class="form-group">
                                                 <div class="form-row">
                                                     <div class="col-lg-2"><label class="col-form-label">Tytuł strony</label></div>
-                                                    <div class="col"><input class="form-control" type="text"></div>
+                                                    <div class="col"><input class="form-control" type="text" value="Lorem ipsum dolor sit amet"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -87,7 +88,7 @@
                                             <div class="form-group">
                                                 <div class="form-row">
                                                     <div class="col-lg-2"><label class="col-form-label">Treść</label></div>
-                                                    <div class="col"><textarea class="form-control" rows="8"></textarea></div>
+                                                    <div class="col"><textarea class="form-control" id="editor" rows="16">&lt;p&gt;Curabitur pretium nulla a magna interdum tincidunt. Aliquam mollis mauris sit amet maximus suscipit. Curabitur consequat volutpat felis, id fringilla felis. Nulla facilisi. Maecenas vehicula volutpat nibh. Sed purus tortor, ornare vitae turpis vel, pretium lacinia ante. Vestibulum ut tempor felis.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Lorem ipsum dolor&lt;/li&gt;&lt;li&gt;Dolor o concectetur&lt;/li&gt;&lt;li&gt;Aliquam mollis mauris sit amet maximus suscipit.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Curabitur pretium nulla a magna interdum tincidunt. Aliquam mollis mauris sit amet maximus suscipit. Curabitur consequat volutpat felis, id fringilla felis. Nulla facilisi. Maecenas vehicula volutpat nibh. Sed purus tortor, ornare vitae turpis vel, pretium lacinia ante. Vestibulum ut tempor felis.&lt;/p&gt;</textarea></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -96,7 +97,7 @@
                                         <div class="col">
                                             <div class="form-group">
                                                 <div class="form-row">
-                                                    <div class="col offset-lg-2"><button class="btn btn-primary" type="button">Zapisz</button></div>
+                                                    <div class="col offset-lg-2"><button class="btn btn-outline-dark text-uppercase" type="button">Zapisz</button></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -509,10 +510,12 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
     <script src="assets/js/libs/js.cookie.js"></script>
     <script src="assets/js/libs/jquery.sticky.js"></script>
     <script src="assets/js/libs/flickity.pkgd.min.js"></script>
     <script src="assets/js/libs/jquery.fancybox.js"></script>
+    <script src="assets/js/components/editor.js"></script>
     <script src="assets/js/components/auth.js"></script>
     <script src="assets/js/components/flickity.js"></script>
     <script src="assets/js/components/sticky.js"></script>

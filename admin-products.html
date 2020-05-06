@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/components/sizes.compiled.css">
     <link rel="stylesheet" href="assets/css/components/fullscreen-modal.compiled.css">
     <link rel="stylesheet" href="assets/css/page.compiled.css">
+    <link rel="stylesheet" href="assets/css/overrides/ckeditor.compiled.css">
 </head>
 
 <body>
@@ -38,8 +39,8 @@
                                     <ul class="nav d-none d-lg-flex">
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-pages.html"><span>CMS</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Asortyment</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Styliści</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Ankieta</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-stylists.html"><span>Styliści</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-quiz.html"><span>Ankieta</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Ustawienia</span></a></li>
                                     </ul><button class="btn btn-lg d-lg-none rounded-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#collapse__menu"><span class="h3 mb-0"><i class="fas fa-bars"></i></span></button></div>
                             </div>
@@ -65,7 +66,7 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="pb--130">
             <div>
                 <div class="pb-3 border-bottom">
                     <div class="container">
@@ -86,13 +87,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="py-3">
+                <div class="bg-light py-3 border-bottom" id="sticker">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="h3 mb-3"><span>Garnitury</span></h2>
+                                <div class="btn-group btn-group-sm mb-0" role="group">
+                                    <div class="dropdown btn-group flex-wrap" role="group"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Mężczyźni</button>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin-products.html">Kobiety</a><a class="dropdown-item" role="presentation" href="admin-products.html">Mężczyźni</a></div>
+                                    </div>
+                                    <div class="dropdown btn-group flex-wrap" role="group"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Odzież</button>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin-products.html">Obuwie</a><a class="dropdown-item" role="presentation" href="admin-products.html">Odzież</a></div>
+                                    </div>
+                                    <div class="dropdown btn-group flex-wrap" role="group"><button class="btn btn-outline-dark btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Garnitury</button>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin-products.html">Koszulki</a><a class="dropdown-item" role="presentation" href="admin-products.html">Koszule</a><a class="dropdown-item" role="presentation"
+                                                href="admin-products.html">Bluzy</a><a class="dropdown-item" role="presentation" href="admin-products.html">Spodnie</a><a class="dropdown-item" role="presentation" href="admin-products.html">Marynarki</a>
+                                            <a
+                                                class="dropdown-item" role="presentation" href="admin-products.html">Garnitury</a><a class="dropdown-item" role="presentation" href="admin-products.html">Jeansy</a><a class="dropdown-item" role="presentation" href="admin-products.html">Bielizna</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
                     <div class="container">
                         <div class="row">
                             <div class="col order-1 order-lg-2">
-                                <h1>Garnitury</h1>
                                 <div class="row">
-                                    <div class="col-sm-6 col-xl-4">
+                                    <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 py-3">
                                         <div class="card">
                                             <div class="row no-gutters flex-nowrap overflow-hidden">
                                                 <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
@@ -111,7 +134,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-xl-4">
+                            <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 py-3">
                                 <div class="card">
                                     <div class="row no-gutters flex-nowrap overflow-hidden">
                                         <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
@@ -130,308 +153,258 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 py-3">
+                        <div class="card">
+                            <div class="row no-gutters flex-nowrap overflow-hidden">
+                                <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                                <div
+                                    class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                            <div
+                                class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a class="text-dark mr-2" href="admin-product.html">Garnitur</a><small>Pierre Cardin</small></h4>
+                        <ul class="list-unstyled mb-2">
+                            <li><span class="mr-2">Rozmiar:</span><span><strong>M</strong></span></li>
+                            <li><span class="mr-2">Kolor:</span><span><strong>granatowy</strong></span></li>
+                        </ul>
+                        <p class="lead card-text"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-auto order-2 order-lg-1 mt-4 mt-lg-0">
+            <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 py-3">
                 <div class="card">
-                    <div class="card-header">
-                        <h3 class="h4 mb-0">Kategorie</h3>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between"><a href="#">Kobiety</a>
-                                <ul class="list-inline text-black-50 ml-3">
-                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                </ul>
+                    <div class="row no-gutters flex-nowrap overflow-hidden">
+                        <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                        <div
+                            class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                    <div
+                        class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title"><a class="text-dark mr-2" href="admin-product.html">Garnitur</a><small>Pierre Cardin</small></h4>
+                <ul class="list-unstyled mb-2">
+                    <li><span class="mr-2">Rozmiar:</span><span><strong>M</strong></span></li>
+                    <li><span class="mr-2">Kolor:</span><span><strong>granatowy</strong></span></li>
+                </ul>
+                <p class="lead card-text"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
+            </div>
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 py-3">
+        <div class="card">
+            <div class="row no-gutters flex-nowrap overflow-hidden">
+                <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                <div
+                    class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+            <div
+                class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title"><a class="text-dark mr-2" href="admin-product.html">Garnitur</a><small>Pierre Cardin</small></h4>
+        <ul class="list-unstyled mb-2">
+            <li><span class="mr-2">Rozmiar:</span><span><strong>M</strong></span></li>
+            <li><span class="mr-2">Kolor:</span><span><strong>granatowy</strong></span></li>
+        </ul>
+        <p class="lead card-text"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 py-3">
+        <div class="card">
+            <div class="row no-gutters flex-nowrap overflow-hidden">
+                <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                <div
+                    class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+            <div
+                class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title"><a class="text-dark mr-2" href="admin-product.html">Garnitur</a><small>Pierre Cardin</small></h4>
+        <ul class="list-unstyled mb-2">
+            <li><span class="mr-2">Rozmiar:</span><span><strong>M</strong></span></li>
+            <li><span class="mr-2">Kolor:</span><span><strong>granatowy</strong></span></li>
+        </ul>
+        <p class="lead card-text"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-xl-3 order-2 order-lg-1 py-3">
+        <div class="card position-sticky" style="top: 0;">
+            <div class="card-header">
+                <h3 class="h4 mb-0">Kategorie</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item pr-2 py-3">
+                    <div class="d-flex justify-content-between"><span><button class="btn rounded-0 p-0 mr-2" type="button" data-toggle="collapse" data-target="#menu__cat__k"><i class="fas fa-chevron-right"></i></button><a class="text-dark" href="#">Kobiety</a></span></div>
+                    <ul class="list-unstyled ml-4 collapse"
+                        id="menu__cat__k">
+                        <li class="mt-2">
+                            <div class="d-flex justify-content-between"><span><button class="btn rounded-0 p-0 mr-2" type="button" data-toggle="collapse" data-target="#menu__cat__k__1"><i class="fas fa-chevron-right"></i></button><a class="text-dark" href="#">Obuwie</a></span>
+                                <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
                             </div>
-                            <ul class="list-unstyled ml-3">
+                            <ul class="list-unstyled ml-4 collapse" id="menu__cat__k__1">
                                 <li>
-                                    <div class="d-flex justify-content-between"><a href="#">Obuwie</a>
-                                        <ul class="list-inline text-black-50 ml-3">
-                                            <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                            <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                            <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                        </ul>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Trampki</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
                                     </div>
-                                    <ul class="list-unstyled ml-3">
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Trampki</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Szpilki</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Czółenka</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Botki sznurowane</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Sportowe</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li>
-                                    <div class="d-flex justify-content-between"><a href="#">Odzież</a>
-                                        <ul class="list-inline text-black-50 ml-3">
-                                            <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                            <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                            <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                        </ul>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Szpilki</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
                                     </div>
-                                    <ul class="list-unstyled ml-3">
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Sukienki</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Spodnie</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Spódnice</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Koszulki</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Koszule</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Marynarki</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Bielizna</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Czółenka</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Botki sznurowane</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Sportowe</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
                                 </li>
                             </ul>
                         </li>
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between"><a href="#">Mężczyźni</a>
-                                <ul class="list-inline text-black-50 ml-3">
-                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                </ul>
+                        <li class="mt-2">
+                            <div class="d-flex justify-content-between"><span><button class="btn rounded-0 p-0 mr-2" type="button" data-toggle="collapse" data-target="#menu__cat__k__2"><i class="fas fa-chevron-right"></i></button><a class="text-dark" href="#">Odzież</a></span>
+                                <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
                             </div>
-                            <ul class="list-unstyled ml-3">
+                            <ul class="list-unstyled ml-4 collapse" id="menu__cat__k__2">
                                 <li>
-                                    <div class="d-flex justify-content-between"><a href="#">Obuwie</a>
-                                        <ul class="list-inline text-black-50 ml-3">
-                                            <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                            <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                            <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                        </ul>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Sukienki</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
                                     </div>
-                                    <ul class="list-unstyled ml-3">
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Sneakersy</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Buty sznurowane</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Półbuty</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Mokasyny</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Buty biznesowe</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li>
-                                    <div class="d-flex justify-content-between"><a href="#">Odzież</a>
-                                        <ul class="list-inline text-black-50 ml-3">
-                                            <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                            <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                            <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                        </ul>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Spodnie</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
                                     </div>
-                                    <ul class="list-unstyled ml-3">
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Koszulki</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Koszule</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Bluzy</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Spodnie</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Marynarki</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a class="text-secondary font-weight-bold" href="#">Garnitury</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Jeansy</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex justify-content-between"><a href="#">Bielizna</a>
-                                                <ul class="list-inline text-black-50 ml-3">
-                                                    <li class="list-inline-item"><i class="fas fa-arrows-alt-v"></i></li>
-                                                    <li class="list-inline-item"><i class="fas fa-pen"></i></li>
-                                                    <li class="list-inline-item"><i class="far fa-trash-alt"></i></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Spódnice</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Koszulki</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Koszule</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Marynarki</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Bielizna</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </li>
+                <li class="list-group-item pr-2 py-3">
+                    <div class="d-flex justify-content-between"><span><button class="btn rounded-0 p-0 mr-2" type="button" data-toggle="collapse" data-target="#menu__cat__m"><i class="fas fa-chevron-right"></i></button><a class="text-primary" href="#">Mężczyźni</a></span></div>
+                    <ul class="list-unstyled ml-4"
+                        id="menu__cat__m">
+                        <li class="mt-2">
+                            <div class="d-flex justify-content-between"><span><button class="btn rounded-0 p-0 mr-2" type="button" data-toggle="collapse" data-target="#menu__cat__m__1"><i class="fas fa-chevron-right"></i></button><a class="text-dark" href="#">Obuwie</a></span>
+                                <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                            </div>
+                            <ul class="list-unstyled ml-4 collapse" id="menu__cat__m__1">
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Sneakersy</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Buty sznurowane</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Półbuty</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Mokasyny</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Buty biznesowe</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt-2">
+                            <div class="d-flex justify-content-between"><span><button class="btn rounded-0 p-0 mr-2" type="button" data-toggle="collapse" data-target="#menu__cat__m__2"><i class="fas fa-chevron-right"></i></button><a class="text-primary" href="#">Odzież</a></span>
+                                <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                            </div>
+                            <ul class="list-unstyled ml-4" id="menu__cat__m__2">
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Koszulki</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Koszule</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Bluzy</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Spodnie</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Marynarki</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="font-weight-bold" href="#">Garnitury</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Jeansy</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between"><a class="text-dark" href="#">Bielizna</a>
+                                        <div class="d-flex justify-content-end ml-3"><button class="btn btn-sm px-1" type="button"><i class="fas fa-grip-vertical"></i></button><button class="btn btn-sm px-1" type="button"><i class="fas fa-pen"></i></button><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     </div>
     </div>
     </div>
@@ -838,10 +811,12 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
     <script src="assets/js/libs/js.cookie.js"></script>
     <script src="assets/js/libs/jquery.sticky.js"></script>
     <script src="assets/js/libs/flickity.pkgd.min.js"></script>
     <script src="assets/js/libs/jquery.fancybox.js"></script>
+    <script src="assets/js/components/editor.js"></script>
     <script src="assets/js/components/auth.js"></script>
     <script src="assets/js/components/flickity.js"></script>
     <script src="assets/js/components/sticky.js"></script>
