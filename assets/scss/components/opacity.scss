@@ -1,0 +1,7 @@
+@import '../globals';
+
+@for $i from 0 through 100 {
+	.opacity--#{$i} {
+		opacity: $i / 100;
+	}
+}

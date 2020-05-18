@@ -10,18 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/libs/flickity.css">
-    <link rel="stylesheet" href="assets/css/libs/jquery.fancybox.css">
-    <link rel="stylesheet" href="assets/css/overrides/custom-control.compiled.css">
-    <link rel="stylesheet" href="assets/css/overrides/flickity.compiled.css">
-    <link rel="stylesheet" href="assets/css/overrides/form-row.compiled.css">
-    <link rel="stylesheet" href="assets/css/overrides/sticky.compiled.css">
-    <link rel="stylesheet" href="assets/css/components/content-box.compiled.css">
-    <link rel="stylesheet" href="assets/css/components/opacity.compiled.css">
-    <link rel="stylesheet" href="assets/css/components/sizes.compiled.css">
-    <link rel="stylesheet" href="assets/css/components/fullscreen-modal.compiled.css">
-    <link rel="stylesheet" href="assets/css/page.compiled.css">
-    <link rel="stylesheet" href="assets/css/overrides/ckeditor.compiled.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body>
@@ -40,7 +29,7 @@
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-pages.html"><span>CMS</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Asortyment</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-stylists.html"><span>Styliści</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-quiz.html"><span>Ankieta</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-quizzes.html"><span>Ankieta</span></a></li>
                                         <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Ustawienia</span></a></li>
                                     </ul><button class="btn btn-lg d-lg-none rounded-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#collapse__menu"><span class="h3 mb-0"><i class="fas fa-bars"></i></span></button></div>
                             </div>
@@ -68,9 +57,70 @@
         </header>
         <main>
             <div class="py-3 py-sm-4 py-lg-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col"></div>
+                <div class="d-none d-lg-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item"><a class="nav-link" href="admin-quizzes.html"><i class="fas fa-chevron-left"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="#">Edycja ankiety</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="row justify-content-between align-items-baseline">
+                            <div class="col-lg-auto mt-3">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item"><i class="fas fa-plus mr-2"></i><a class="text-dark" href="admin-quiz-section.html">Dodaj sekcję</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="row mt-3">
+                            <div class="col-12 mb-3">
+                                <form><input class="form-control form-control-lg" type="text" placeholder="Tytuł ankiety"></form>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <h3><span class="mr-2">Tytuł sekcji</span><small class="h5"><a href="admin-quiz-section.html">Edytuj</a></small></h3>
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Pytanie</th>
+                                                <th class="text-right">Akcje</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="admin-quiz-question.html">Lorem ipsum dolor</a></td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end"><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="admin-quiz-question.html">Curabitur pretium nulla a magna interdum tincidunt<br></a></td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end"><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="admin-quiz-question.html">Sed purus tortor, ornare vitae turpis vel</a></td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end"><button class="btn btn-sm px-1" type="button"><i class="far fa-trash-alt"></i></button></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="d-flex"><a class="btn text-uppercase rounded-0 p-0" role="button" href="admin-quiz-question.html"><i class="fas fa-plus mr-2"></i><span>Dodaj pytanie</span></a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -476,17 +526,9 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
-    <script src="assets/js/libs/js.cookie.js"></script>
-    <script src="assets/js/libs/jquery.sticky.js"></script>
-    <script src="assets/js/libs/flickity.pkgd.min.js"></script>
-    <script src="assets/js/libs/jquery.fancybox.js"></script>
-    <script src="assets/js/components/editor.js"></script>
-    <script src="assets/js/components/auth.js"></script>
-    <script src="assets/js/components/flickity.js"></script>
-    <script src="assets/js/components/sticky.js"></script>
-    <script src="assets/js/components/back.js"></script>
-    <script src="assets/js/components/order.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>

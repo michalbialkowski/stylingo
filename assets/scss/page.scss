@@ -1,0 +1,44 @@
+@import 'globals';
+
+main {
+	padding-top: 70px;
+}
+
+@media #{$xs} {
+	#navbar__nav {
+		height: 50px !important;
+	}
+	
+	main {
+		padding-top: 50px;
+	}
+}
+
+@media #{$sm} {
+	#navbar__nav {
+		height: 55px !important;
+	}
+	
+	main {
+		padding-top: 55px;
+	}
+}
+
+@media #{$md} {
+	#navbar__nav {
+		height: 60px !important;
+	}
+	
+	main {
+		padding-top: 60px;
+	}
+}
+
+#modal__quiz {
+	
+	
+	.modal-content {
+		max-height: calc(100vh - 3.5rem);
+		overflow: scroll;
+	}
+}
