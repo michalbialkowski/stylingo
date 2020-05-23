@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body>
     <div>
-        <header class="border-bottom">
-            <div class="bg-white fixed-top border-bottom" id="menu__admin">
+        <header>
+            <div class="bg-white border-bottom" id="menu__admin">
                 <div class="d-flex align-items-center height--70" id="navbar__nav">
                     <div class="container">
                         <div class="row justify-content-between align-items-center">
@@ -26,83 +26,90 @@
                             <div class="col-auto d-flex">
                                 <div class="d-flex align-items-center">
                                     <ul class="nav d-none d-lg-flex">
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-pages.html"><span>CMS</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-products.html"><span>Asortyment</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-stylists.html"><span>Styliści</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-quizzes.html"><span>Ankieta</span></a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="admin-panel.html"><span>Ustawienia</span></a></li>
-                                    </ul><button class="btn btn-lg d-lg-none rounded-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#collapse__menu"><span class="h3 mb-0"><i class="fas fa-bars"></i></span></button></div>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold px-0 ml-3" href="admin-pages.html"><span>CMS</span></a></li>
+                                        <li class="nav-item ml-3"><a class="nav-link text-dark font-weight-bold px-0" href="admin-products.html"><span>Asortyment</span></a></li>
+                                        <li class="nav-item ml-3"><a class="nav-link text-dark font-weight-bold px-0" href="admin-stylists.html"><span>Styliści</span></a></li>
+                                        <li class="nav-item ml-3"><a class="nav-link text-dark font-weight-bold px-0" href="admin-quizzes-surveys.html"><span>Quiz</span></a></li>
+                                        <li class="nav-item ml-3"><a class="nav-link text-dark font-weight-bold px-0" href="admin-panel.html"><span>Ustawienia</span></a></li>
+                                    </ul><button class="btn btn-lg d-lg-none rounded-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#collapse__menu"><span class="h3 mb-0"><i class="icon-menu"></i></span></button></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="collapse__menu" class="collapse">
-                    <div class="pt-3 border-top">
-                        <div class="container mb-3">
-                            <div class="row">
-                                <div class="col d-flex justify-content-end">
-                                    <ul class="list-unstyled text-right mb-0 lead">
-                                        <li><a class="text-dark" href="admin-panel.html">CMS</a></li>
-                                        <li><a class="text-dark" href="admin-panel.html">Asortyment</a></li>
-                                        <li><a class="text-dark" href="admin-panel.html">Styliści</a></li>
-                                        <li><a class="text-dark" href="admin-panel.html">Ankieta</a></li>
-                                        <li><a class="text-dark" href="admin-panel.html">Ustawienia</a></li>
-                                    </ul>
-                                </div>
+                    <ul class="list-group rounded-0">
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="admin-pages.html">CMS</a></div>
+                        </li>
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="admin-products.html">Asortyment</a></div>
+                        </li>
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="admin-stylists.html">Styliści</a></div>
+                        </li>
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="admin-quizzes-surveys-edit.html">Quiz</a></div>
+                        </li>
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="#">Ustawienia</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="bg-light py-3 border-bottom">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <div class="d-flex align-items-baseline flex-wrap">
+                                <h2 class="h3 mb-0 mr-2">CMS</h2>
+                                <ol class="breadcrumb bg-transparent border-0 rounded-0 p-0 mb-0">
+                                    <li class="breadcrumb-item"><a class="text-dark"><span class="h5 mb-0">Lista stron</span></a></li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <div>
-                <div class="pb-3 border-bottom">
-                    <div class="container">
-                        <div class="row justify-content-between align-items-baseline">
-                            <div class="col-lg-auto mt-3">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item"><i class="fas fa-plus mr-2"></i><span>Dodaj stronę</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-lg-auto mt-3">
-                                <form class="form-inline">
-                                    <div class="input-group"><input class="form-control" type="text" placeholder="Wyszukaj stronę">
-                                        <div class="input-group-append"><button class="btn btn-primary text-uppercase text-white" type="button">Szukaj</button></div>
-                                    </div>
-                                </form>
+            <div class="py-3 border-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="btn-toolbar justify-content-between">
+                                <div class="btn-group btn-group-sm" role="group"><a class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" role="button" href="admin-pages-edit.html"><i class="icon-plus mr-2"></i><span>Dodaj stronę</span></a></div>
+                                <div class="btn-group btn-group-sm mr-2"
+                                    role="group"><a class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" role="button" href="admin-pages-edit.html"><i class="icon-magnifier mr-2"></i><span>Wyszukaj</span></a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="py-3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="table-responsive">
-                                    <table class="table mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>Nazwa</th>
-                                                <th class="text-right">Akcje</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="admin-page.html">Lorem ipsum dolor sit amet</a></td>
-                                                <td class="text-right">
-                                                    <div class="btn-group btn-group-sm" role="group"><a class="btn" role="button" href="admin-page.html"><i class="fas fa-pen"></i></a><button class="btn" type="button"><i class="far fa-trash-alt"></i></button></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="admin-page.html">Lorem ipsum dolor sit amet</a></td>
-                                                <td class="text-right">
-                                                    <div class="btn-group btn-group-sm" role="group"><a class="btn" role="button" href="admin-page.html"><i class="fas fa-pen"></i></a><button class="btn" type="button"><i class="far fa-trash-alt"></i></button></div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+            </div>
+            <div class="mt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Tytuł</th>
+                                            <th class="text-right">Akcje</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="admin-pages-edit.html">Lorem ipsum dolor sit amet</a></td>
+                                            <td class="text-right">
+                                                <div class="btn-toolbar justify-content-end">
+                                                    <div class="btn-group btn-group-sm ml-2" role="group"><a class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" role="button" href="admin-pages-edit.html"><i class="icon-pencil mr-2"></i><span>Edytuj</span></a></div>
+                                                    <div class="btn-group btn-group-sm ml-2"
+                                                        role="group"><button class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-trash mr-2"></i><span>Usuń</span></button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -510,7 +517,6 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/smart-forms.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>

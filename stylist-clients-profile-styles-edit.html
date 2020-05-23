@@ -16,209 +16,257 @@
 <body>
     <div>
         <header>
-            <div class="bg-white fixed-top border-bottom" id="menu__stylingo">
+            <div class="bg-white border-bottom" id="menu__stylist">
                 <div class="d-flex align-items-center height--70" id="navbar__nav">
                     <div class="container">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto">
-                                <h1 class="mb-0"><a class="text-dark navbar-brand mr-0 p-0" href="index.html"><span class="h1 mb-0">Stylingo</span></a></h1>
+                                <h1 class="mb-0"><a class="text-dark navbar-brand mr-0 p-0" href="index.html"><span class="h1 mb-0">Stylingo</span></a><small class="h5 ml-2"><a class="text-black-50" href="stylist-clients.html">Panel Stylisty</a></small></h1>
                             </div>
                             <div class="col-auto d-flex">
                                 <div class="d-flex align-items-center">
-                                    <ul class="nav">
-                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="client-auth.html"><span>Zaloguj</span></a></li>
-                                        <li class="nav-item d-none d-sm-block"><a class="nav-link text-dark font-weight-bold" href="quiz.html"><span>Rozwiąż Quiz</span></a></li>
-                                        <li class="nav-item d-none d-lg-block"><a class="nav-link text-dark font-weight-bold" href="page.html"><span>Jak to działa</span></a></li>
-                                        <li class="nav-item d-none d-lg-block"><a class="nav-link text-dark font-weight-bold" href="stylist-auth.html"><span>Dla stylisty</span></a></li>
-                                        <li class="nav-item d-none d-lg-block"><a class="nav-link text-dark font-weight-bold" href="page.html"><span>FAQ</span></a></li>
-                                    </ul><button class="btn btn-lg d-lg-none rounded-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#collapse__menu"><span class="h3 mb-0"><i class="fas fa-bars"></i></span></button></div>
+                                    <ul class="nav d-none d-lg-flex">
+                                        <li class="nav-item mr-3"><a class="nav-link text-dark font-weight-bold px-0" href="stylist-clients.html"><span>Moi klienci</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold px-0 mr-3" href="#"><span>Moje dane</span></a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark font-weight-bold px-0" href="index.html"><span>Wyloguj</span></a></li>
+                                    </ul><button class="btn btn-lg d-lg-none rounded-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#collapse__menu"><span class="h3 mb-0"><i class="icon-menu"></i></span></button></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="collapse__menu" class="collapse">
-                    <div class="pt-3 border-top">
-                        <div class="container mb-3">
-                            <div class="row">
-                                <div class="col d-flex justify-content-end">
-                                    <ul class="list-unstyled text-right mb-0 lead">
-                                        <li class="d-none"><a class="text-dark" href="client-auth.html">Zaloguj</a></li>
-                                        <li class="d-sm-none"><a class="text-dark" href="quiz.html">Rozwiąż Quiz</a></li>
-                                        <li><a class="text-dark" href="page.html">Jak to działa</a></li>
-                                        <li><a class="text-dark" href="stylist-auth.html">Dla stylisty</a></li>
-                                        <li><a class="text-dark" href="page.html">FAQ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="list-group rounded-0">
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="stylist-clients.html">Moi klienci</a></div>
+                        </li>
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="#">Moje dane</a></div>
+                        </li>
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="#">Ustawienia</a></div>
+                        </li>
+                        <li class="list-group-item text-right rounded-0 border-left-0 border-right-0 border-bottom-0">
+                            <div class="container"><a class="text-dark lead" href="#">Wyloguj</a></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
         <main>
+            <div class="bg-light py-3 border-bottom">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <div class="d-flex align-items-baseline flex-wrap">
+                                <h2 class="h3 mb-0 mr-2">Moi klienci</h2>
+                                <ol class="breadcrumb bg-transparent border-0 rounded-0 p-0 mb-0">
+                                    <li class="breadcrumb-item"><a class="text-dark"><span class="h5 mb-0">Adam Nowak</span></a></li>
+                                    <li class="breadcrumb-item"><a class="text-dark"><span class="h5 mb-0">Edycja stylizacji</span></a></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <ul class="nav">
+                                <li class="nav-item mr-3"><a class="nav-link p-0" href="#">Profil</a></li>
+                                <li class="nav-item mr-3"><a class="nav-link p-0" href="#">Wiadomości</a></li>
+                                <li class="nav-item mr-3"><a class="nav-link active text-dark p-0" href="#">Stylizacje</a></li>
+                                <li class="nav-item"><a class="nav-link p-0" href="stylist-clients-profile-quiz.html">Ankieta</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 border-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="btn-toolbar justify-content-between">
+                                <div class="btn-group btn-group-sm mr-2" role="group"><a class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" role="button" href="stylist-clients-profile-styles.html"><i class="icon-action-undo mr-2"></i><span>Powrót</span></a></div>
+                                <div class="btn-group btn-group-sm"
+                                    role="group"><button class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj produkt</span></button><button class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0"
+                                        type="button"><i class="icon-note mr-2"></i><span>Wyświetl ankietę</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
                 <div class="container">
                     <div class="row">
-                        <div class="col">
-                            <div class="content--box height--500">
-                                <div style="background-image: url(&quot;https://as1.ftcdn.net/jpg/03/08/75/54/500_F_308755479_ZdBlMbGDK6yE31mrIkCftxtRIpN9wq1L.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;">
-                                    <div class="row justify-content-center w-100">
-                                        <div class="col-sm-auto">
-                                            <div class="bg-white py-3 px-4 py-sm-4 px-sm-5">
-                                                <h2 class="text-center mb-4">Propozycje ubrań <br>dla każdego</h2><a class="btn btn-danger btn-block btn-lg text-uppercase text-white rounded-0" role="button" href="quiz.html">Rozwiąż Quiz</a></div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-6 col-lg-4 py-3 flickity--item">
+                            <div class="card">
+                                <div class="row no-gutters flex-nowrap overflow-hidden">
+                                    <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                                    <div
+                                        class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                                <div
+                                    class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title"><a class="text-dark mr-2" href="#" data-toggle="modal" data-target="#modal__product">Garnitur</a><small>Pierre Cardin</small></h4>
+                            <ul class="list-unstyled mb-2">
+                                <li><span class="mr-2">Rozmiar:</span><span><strong>M</strong></span></li>
+                                <li><span class="mr-2">Kolor:</span><span><strong>granatowy</strong></span></li>
+                            </ul>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            <p class="lead card-text"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-toolbar">
+                                <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-trash mr-2"></i><span>Usuń</span></button></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="py-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12 col-lg-10 col-xl-8">
-                            <h1 class="text-center mb-4">Jak to działa?</h1>
-                            <p class="lead text-center mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque mauris sit amet nulla auctor viverra. Mauris leo sem, rutrum a convallis faucibus, consectetur a lacus. Aliquam ultricies ac erat vel vestibulum.
-                                Praesent dignissim, lectus id tempor finibus, lorem erat varius velit, vitae pellentesque nibh velit eu ante. Integer tincidunt a tellus et dignissim.<br></p>
-                        </div>
+                <div class="col-md-6 col-lg-4 py-3 flickity--item">
+                    <div class="card">
+                        <div class="row no-gutters flex-nowrap overflow-hidden">
+                            <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg" data-fancybox="gallery-2" style="background-image: url(&quot;https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                            <div
+                                class="col-12"><span class="d-block content--box format--2-3"><a href="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg" data-fancybox="gallery-2" style="background-image: url(&quot;https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                        <div
+                            class="col-12"><span class="d-block content--box format--2-3"><a href="https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg" data-fancybox="gallery-2" style="background-image: url(&quot;https://as2.ftcdn.net/jpg/02/43/18/51/500_F_243185125_PRrItnw9DGoTOGQ9ZErw4YO8iOA2h1Nw.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><a class="text-dark mr-2" href="#" data-toggle="modal" data-target="#modal__product">Płaszcz</a><small>Wólczanka</small></h4>
+                    <ul class="list-unstyled mb-2">
+                        <li><span class="mr-2">Rozmiar:</span><span><strong>M</strong></span></li>
+                        <li><span class="mr-2">Kolor:</span><span><strong>beżowy</strong></span></li>
+                    </ul>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <p class="lead card-text"><span class="mr-2">Cena:</span><span class="font-weight-bold">3229,99 zł</span></p>
+                </div>
+                <div class="card-footer bg-white">
+                    <div class="btn-toolbar">
+                        <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-trash mr-2"></i><span>Usuń</span></button></div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="border-top py-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3">
+    </div>
+    <div class="col-md-6 col-lg-4 py-3 flickity--item">
+        <div class="card">
+            <div class="row no-gutters flex-nowrap overflow-hidden">
+                <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg" data-fancybox="gallery-3" style="background-image: url(&quot;https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                <div
+                    class="col-12"><span class="d-block content--box format--2-3"><a href="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg" data-fancybox="gallery-3" style="background-image: url(&quot;https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+            <div
+                class="col-12"><span class="d-block content--box format--2-3"><a href="https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg" data-fancybox="gallery-3" style="background-image: url(&quot;https://as2.ftcdn.net/jpg/03/19/42/21/500_F_319422141_b0EMVWusyaYbwfhvZU8MUbx4mdy0Zyv1.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title"><a class="text-dark mr-2" href="#" data-toggle="modal" data-target="#modal__product">Buty</a><small>Lasocki</small></h4>
+        <ul class="list-unstyled mb-2">
+            <li><span class="mr-2">Rozmiar:</span><span>42</span></li>
+            <li><span class="mr-2">Kolor:</span><span><strong>czarny</strong></span></li>
+        </ul>
+        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+        <p class="lead card-text"><span class="mr-2">Cena:</span><span class="font-weight-bold">789,99 zł</span></p>
+    </div>
+    <div class="card-footer bg-white">
+        <div class="btn-toolbar">
+            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-trash mr-2"></i><span>Usuń</span></button></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-4 py-3 flickity--item">
+        <div class="card">
+            <div class="row no-gutters flex-nowrap overflow-hidden">
+                <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg" data-fancybox="gallery-4" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                <div
+                    class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg" data-fancybox="gallery-4" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+            <div
+                class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg" data-fancybox="gallery-4" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/97/16/74/500_F_297167428_uQWUET9IAQZvGAFUTH33sGWbJzLqfA6P.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title"><a class="text-dark mr-2" href="#" data-toggle="modal" data-target="#modal__product">Zegarek</a><small>Patek Philippe</small></h4>
+        <ul class="list-unstyled mb-2">
+            <li><span class="mr-2">Kolor:</span><span><strong>złoty</strong></span></li>
+        </ul>
+        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+        <p class="lead card-text"><span class="mr-2">Cena:</span><span class="font-weight-bold">7960,00 zł</span></p>
+    </div>
+    <div class="card-footer bg-white">
+        <div class="btn-toolbar">
+            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-trash mr-2"></i><span>Usuń</span></button></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    <div id="section__page__modals">
+        <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__product">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header d-flex justify-content-end border-0 p-0">
+                        <div><button class="btn btn-link border-left border-bottom px-3 py-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="fas fa-times"></i></span></button></div><button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body px-0 px-sm-2 px-md-3">
+                        <div>
+                            <div class="container">
                                 <div class="row">
-                                    <div class="col py-3">
-                                        <h2 class="text-center text-lg-left h5 font-weight-bold">Stylingo</h2>
-                                        <p class="text-center text-lg-left mb-0">Curabitur pretium nulla a magna interdum tincidunt. Aliquam mollis mauris sit amet maximus suscipit. Curabitur consequat volutpat felis, id fringilla felis. Nulla facilisi. Maecenas vehicula volutpat nibh. Sed purus
-                                            tortor, ornare vitae turpis vel, pretium lacinia ante. Vestibulum ut tempor felis.<br></p>
-                                    </div>
-                                    <div class="col-12 col-lg-auto">
-                                        <div class="row justify-content-center">
-                                            <div class="col-sm-4 col-lg-auto py-3">
-                                                <h3 class="text-center text-lg-left h5 font-weight-bold">Stylingo</h3>
-                                                <ul class="list-unstyled text-center text-lg-left mb-0">
-                                                    <li><a class="text-left text-dark" href="client-auth.html">Zaloguj</a></li>
-                                                    <li><a class="text-dark" href="quiz.html">Rozwiąż Quiz</a></li>
-                                                    <li><a class="text-dark" href="stylist-auth.html">Dla Stylisty</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm-4 col-lg-auto py-3">
-                                                <h3 class="text-center text-lg-left h5 font-weight-bold">O nas</h3>
-                                                <ul class="list-unstyled text-center text-lg-left mb-0">
-                                                    <li><a class="text-left text-dark" href="page.html">Jak to działa</a></li>
-                                                    <li><a class="text-dark" href="page.html">FAQ</a></li>
-                                                    <li><a class="text-dark" href="page.html">Regulamin</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-auto py-3">
-                                        <ul class="list-inline d-flex justify-content-center align-items-center mb-0">
-                                            <li class="list-inline-item mr-4"><a class="h4 mb-0" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li class="list-inline-item mr-4"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li class="list-inline-item mr-0"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="row justify-content-lg-between">
-                                    <div class="col-lg-auto d-none d-lg-block order-1 order-lg-2 py-3">
-                                        <ul class="list-inline d-flex justify-content-center mb-0">
-                                            <li class="list-inline-item"><a href="page.html">Polityka prywatności</a></li>
-                                            <li class="list-inline-item"><a href="page.html">Polityka cookies</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-auto order-2 order-lg-1 py-3">
-                                        <ul class="list-inline d-flex flex-column align-items-center flex-lg-row mb-0">
-                                            <li class="list-inline-item">© 2020 Stylingo All rights reserved</li>
-                                            <li class="list-inline-item">Projekt i realizacja:&nbsp;<a href="#">KDMC</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div id="section__page__modals">
-            <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__product">
-                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                    <div class="modal-content rounded-0">
-                        <div class="modal-header d-flex justify-content-end border-0 p-0">
-                            <div><button class="btn btn-link border-left border-bottom px-3 py-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="fas fa-times"></i></span></button></div><button type="button" class="close" data-dismiss="modal"
-                                aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                        <div class="modal-body px-0 px-sm-2 px-md-3">
-                            <div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="row no-gutters flex-nowrap overflow-hidden">
-                                                <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-modal-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
-                                                <div
-                                                    class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-modal-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
+                                    <div class="col-lg-4">
+                                        <div class="row no-gutters flex-nowrap overflow-hidden">
+                                            <div class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-modal-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
                                             <div
                                                 class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-modal-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
-                                    </div>
+                                        <div
+                                            class="col-12"><span class="d-block content--box format--2-3"><a href="https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg" data-fancybox="gallery-modal-1" style="background-image: url(&quot;https://as1.ftcdn.net/jpg/02/77/50/52/500_F_277505263_ylQHvZWJAzdtlSIhb5zv4FEJGYEmkPNZ.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></a></span></div>
                                 </div>
-                                <div class="col mt-3 mt-lg-0">
-                                    <h3><span class="mr-2">Garnitur</span><small class="text-black-50">Pierre Cardin</small></h3>
-                                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p class="lead"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
-                                    <div class="table-responsive">
-                                        <table class="table table-sm">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Rozmiar</td>
-                                                    <td>M</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Kolor</td>
-                                                    <td>granatowy</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Materiał</td>
-                                                    <td>68% poliester, 30% wiskoza, 2% elastan</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Podszewka</td>
-                                                    <td>100% poliester</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Stan</td>
-                                                    <td>standardowy</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Kształt kołnierza</td>
-                                                    <td>kołnierz rewers</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Zapięcie</td>
-                                                    <td>guziki</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Kieszenie</td>
-                                                    <td>kieszenie klapowe, kieszenie wewnętrzne</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="btn-group flex-wrap w-100 rounded-0" role="group"><button class="btn btn-light text-uppercase rounded-0" type="button"><span><i class="fas fa-times mr-2"></i><span class="text-nowrap font-weight-bold">Pomiń produkt</span></span></button><button class="btn btn-light text-uppercase text-left rounded-0"
-                                            type="button"><span class="d-flex justify-content-center align-items-center w-100 mb-2"><img class="img-fluid" src="https://mosaic02.ztat.net/nvg/z-header-fragment/zalando-logo/logo_default.svg"></span><small class="d-flex justify-content-center align-items-center"><i class="fas fa-shopping-bag mr-2"></i><span class="text-nowrap font-weight-bold">Kup w sklepie</span></small></button></div>
+                            </div>
+                            <div class="col mt-3 mt-lg-0">
+                                <h3><span class="mr-2">Garnitur</span><small class="text-black-50">Pierre Cardin</small></h3>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                <p class="lead"><span class="mr-2">Cena:</span><span class="font-weight-bold">2149,99 zł</span></p>
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <tbody>
+                                            <tr>
+                                                <td>Rozmiar</td>
+                                                <td>M</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kolor</td>
+                                                <td>granatowy</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Materiał</td>
+                                                <td>68% poliester, 30% wiskoza, 2% elastan</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Podszewka</td>
+                                                <td>100% poliester</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Stan</td>
+                                                <td>standardowy</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kształt kołnierza</td>
+                                                <td>kołnierz rewers</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zapięcie</td>
+                                                <td>guziki</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kieszenie</td>
+                                                <td>kieszenie klapowe, kieszenie wewnętrzne</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+                                <div class="btn-group flex-wrap w-100 rounded-0" role="group"><button class="btn btn-light text-uppercase rounded-0" type="button"><span><i class="fas fa-times mr-2"></i><span class="text-nowrap font-weight-bold">Pomiń produkt</span></span></button><button class="btn btn-light text-uppercase text-left rounded-0"
+                                        type="button"><span class="d-flex justify-content-center align-items-center w-100 mb-2"><img class="img-fluid" src="https://mosaic02.ztat.net/nvg/z-header-fragment/zalando-logo/logo_default.svg"></span><small class="d-flex justify-content-center align-items-center"><i class="fas fa-shopping-bag mr-2"></i><span class="text-nowrap font-weight-bold">Kup w sklepie</span></small></button></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__order">
         <div class="modal-dialog modal-dialog-centered" role="document">
