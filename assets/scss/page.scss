@@ -1,37 +1,21 @@
 @import 'globals';
 
-body.frontpage main {
-	padding-top: 70px;
+body {
+	background: #e5e5e5;
 }
 
-@media #{$xs} {
-	#navbar__nav {
-		height: 50px !important;
-	}
-	
-	body.frontpage main {
-		padding-top: 50px;
-	}
+main {
+	// background: linear-gradient(white, white 100px,  transparent 200px);
 }
 
-@media #{$sm} {
-	#navbar__nav {
-		height: 55px !important;
-	}
-	
-	body.frontpage main {
-		padding-top: 55px;
-	}
+table tr.bg-light {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5));
 }
 
-@media #{$md} {
-	#navbar__nav {
-		height: 60px !important;
-	}
-	
-	body.frontpage main {
-		padding-top: 60px;
-	}
+#section__page__main__top {
+	background-color: #E4E4E1;
+ 	background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
 }
 
 #modal__quiz {

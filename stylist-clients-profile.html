@@ -54,10 +54,10 @@
             </div>
         </header>
         <main>
-            <div class="bg-light py-3 border-bottom">
+            <div class="bg-light pt-3 border-bottom" id="section__page__main__top">
                 <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-auto">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-auto mb-3">
                             <div class="d-flex align-items-baseline flex-wrap">
                                 <h2 class="h3 mb-0 mr-2">Moi klienci</h2>
                                 <ol class="breadcrumb bg-transparent border-0 rounded-0 p-0 mb-0">
@@ -67,22 +67,22 @@
                             </div>
                         </div>
                         <div class="col-auto">
-                            <ul class="nav">
-                                <li class="nav-item mr-3"><a class="nav-link active text-dark p-0" href="stylist-clients-profile.html">Profil</a></li>
-                                <li class="nav-item mr-3"><a class="nav-link p-0" href="stylist-clients-profile-messages.html">Wiadomości</a></li>
-                                <li class="nav-item mr-3"><a class="nav-link p-0" href="stylist-clients-profile-styles.html">Stylizacje</a></li>
-                                <li class="nav-item"><a class="nav-link p-0" href="stylist-clients-profile-quiz.html">Ankieta</a></li>
+                            <ul class="nav nav-tabs border-bottom-0">
+                                <li class="nav-item mr-3"><a class="nav-link active text-dark" href="stylist-clients-profile.html">Profil</a></li>
+                                <li class="nav-item mr-3"><a class="nav-link text-dark" href="stylist-clients-profile-messages.html">Wiadomości</a></li>
+                                <li class="nav-item mr-3"><a class="nav-link text-dark" href="stylist-clients-profile-styles.html">Stylizacje</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="stylist-clients-profile-quiz.html">Ankieta</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="py-3 border-bottom">
+            <div class="bg-white shadow-sm py-3 border-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col">
                             <div class="btn-toolbar justify-content-between">
-                                <div class="btn-group btn-group-sm mr-2" role="group"><a class="btn btn-outline-dark text-uppercase d-flex align-items-center rounded-0" role="button" href="stylist-clients.html"><i class="icon-action-undo mr-2"></i><span>Powrót</span></a></div>
+                                <div class="btn-group btn-group-sm mr-2" role="group"><a class="btn btn-dark text-uppercase d-flex align-items-center rounded-0" role="button" href="stylist-clients.html"><i class="icon-action-undo mr-2"></i><span>Powrót</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -192,6 +192,26 @@
                     <div>
                         <div class="container">
                             <form class="form-inline">
+                                <div class="input-group w-100"><input class="form-control rounded-0 mr-2" type="text" placeholder="Nazwa sekcji">
+                                    <div class="input-group-append"><button class="btn btn-dark text-uppercase rounded-0" type="submit">Dodaj</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__product__add_images">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-0">
+                <div class="modal-header d-flex justify-content-end border-0 p-0">
+                    <div><button class="btn btn-link border-left border-bottom py-1 px-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="la la-times" style="font-size: 22px;"></i></span></button></div><button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body p-0 p-sm-2 p-md-3">
+                    <div>
+                        <div class="container">
+                            <form class="form-inline" enctype="multipart/form-data" method="post">
                                 <div class="input-group w-100"><input class="form-control rounded-0 mr-2" type="text" placeholder="Nazwa sekcji">
                                     <div class="input-group-append"><button class="btn btn-dark text-uppercase rounded-0" type="submit">Dodaj</button></div>
                                 </div>

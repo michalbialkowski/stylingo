@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
-<body>
+<body class="bg-white">
     <div>
         <header class="border-bottom">
             <div class="bg-white fixed-top border-bottom" id="menu__stylingo">
@@ -94,7 +94,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12 offset-sm-4 offset-md-3">
-                                            <div class="form-group mb-0"><a class="btn btn-outline-secondary text-uppercase auth__client rounded-0 mr-2" role="button" href="stylist-clients.html"><span>Zaloguj się</span></a></div>
+                                            <div class="form-group mb-0"><a class="btn btn-primary text-uppercase text-white auth__client rounded-0 mr-2" role="button" href="stylist-clients.html"><span>Zaloguj się</span></a></div>
                                         </div>
                                     </div>
                                 </form>
@@ -150,7 +150,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 offset-sm-4 offset-md-3">
-                                        <div class="form-group mb-0"><button class="btn btn-outline-secondary text-uppercase rounded-0" type="submit"><span>Załóż konto</span></button></div>
+                                        <div class="form-group mb-0"><button class="btn btn-primary text-uppercase text-white rounded-0" type="submit"><span>Załóż konto</span></button></div>
                                     </div>
                                 </div>
                             </form>
@@ -337,6 +337,26 @@
                     <div>
                         <div class="container">
                             <form class="form-inline">
+                                <div class="input-group w-100"><input class="form-control rounded-0 mr-2" type="text" placeholder="Nazwa sekcji">
+                                    <div class="input-group-append"><button class="btn btn-dark text-uppercase rounded-0" type="submit">Dodaj</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade mb-4 modal--styled" role="dialog" tabindex="-1" id="modal__product__add_images">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-0">
+                <div class="modal-header d-flex justify-content-end border-0 p-0">
+                    <div><button class="btn btn-link border-left border-bottom py-1 px-2 rounded-0" data-dismiss="modal" type="button"><span class="text-dark"><i class="la la-times" style="font-size: 22px;"></i></span></button></div><button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body p-0 p-sm-2 p-md-3">
+                    <div>
+                        <div class="container">
+                            <form class="form-inline" enctype="multipart/form-data" method="post">
                                 <div class="input-group w-100"><input class="form-control rounded-0 mr-2" type="text" placeholder="Nazwa sekcji">
                                     <div class="input-group-append"><button class="btn btn-dark text-uppercase rounded-0" type="submit">Dodaj</button></div>
                                 </div>
