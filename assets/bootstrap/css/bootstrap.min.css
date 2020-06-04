@@ -46,7 +46,7 @@ body {
   margin: 0;
   font-family: Poppins;
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   color: #000;
   text-align: left;
@@ -94,7 +94,7 @@ ul ol {
   margin-bottom: 0; }
 
 dt {
-  font-weight: 400; }
+  font-weight: 600; }
 
 dd {
   margin-bottom: .5rem;
@@ -105,7 +105,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: 400; }
+  font-weight: bolder; }
 
 small {
   font-size: 80%; }
@@ -296,8 +296,8 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: Playfair Display;
-  font-weight: 500;
+  font-family: Oswald;
+  font-weight: 400;
   line-height: 1.2; }
 
 h1, .h1 {
@@ -372,7 +372,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 300; }
+  font-weight: 400; }
 
 mark,
 .mark {
@@ -446,7 +446,7 @@ kbd {
   kbd kbd {
     padding: 0;
     font-size: 100%;
-    font-weight: 400;
+    font-weight: 600;
     box-shadow: none; }
 
 pre {
@@ -1683,7 +1683,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   color: #000;
   text-align: center;
   vertical-align: middle;
@@ -2093,7 +2093,7 @@ fieldset:disabled a.btn {
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-link {
-  font-weight: 300;
+  font-weight: 400;
   color: #a8987f;
   text-decoration: none; }
   .btn-link:hover {
@@ -2316,7 +2316,7 @@ input[type="button"].btn-block {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 300;
+  font-weight: 400;
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -2495,7 +2495,7 @@ input[type="button"].btn-block {
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 0.7rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   color: #495057;
   text-align: center;
@@ -3379,7 +3379,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -3503,7 +3503,7 @@ input[type="button"].btn-block {
   color: inherit; }
 
 .alert-link {
-  font-weight: 400; }
+  font-weight: 600; }
 
 .alert-dismissible {
   padding-right: 3.7rem; }
@@ -3816,7 +3816,7 @@ input[type="button"].btn-block {
 .close {
   float: right;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -4023,7 +4023,7 @@ a.close.disabled {
   margin: 0;
   font-family: Poppins;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -4107,7 +4107,7 @@ a.close.disabled {
   max-width: 276px;
   font-family: Poppins;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -6757,19 +6757,19 @@ button.bg-dark:focus {
   text-transform: capitalize !important; }
 
 .font-weight-light {
-  font-weight: 200 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-lighter {
   font-weight: lighter !important; }
 
 .font-weight-normal {
-  font-weight: 300 !important; }
+  font-weight: 400 !important; }
 
 .font-weight-bold {
-  font-weight: 500 !important; }
+  font-weight: 600 !important; }
 
 .font-weight-bolder {
-  font-weight: 400 !important; }
+  font-weight: bolder !important; }
 
 .font-italic {
   font-style: italic !important; }

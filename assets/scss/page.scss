@@ -1,11 +1,21 @@
 @import 'globals';
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: "Oswald" !important;
+	//font-weight: 300;
+}
+
 body {
 	background: #e5e5e5;
 	
 	&.frontpage {
 		padding-top: 70px;
 	}
+}
+
+b, strong {
+	font-weight: 600 !important;
 }
 
 main {
