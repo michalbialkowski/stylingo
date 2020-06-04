@@ -9,6 +9,13 @@
 		height: #{$i}px;
 	}
 	
+	.p--#{$i} {
+		padding-left: #{$i}px !important;
+		padding-right: #{$i}px !important;
+		padding-top: #{$i}px !important;
+		padding-bottom: #{$i}px !important;
+	}
+	
 	.px--#{$i} {
 		padding-left: #{$i}px !important;
 		padding-right: #{$i}px !important;

@@ -23,7 +23,7 @@
 
 <body class="bg-white frontpage">
     <div>
-        <header>
+        <header class="border-bottom">
             <div class="bg-white fixed-top border-bottom" id="menu__stylingo">
                 <div class="d-flex align-items-center height--70" id="navbar__nav">
                     <div class="container">
@@ -66,109 +66,194 @@
             </div>
         </header>
         <main>
-            <div>
+            <div class="d-none d-lg-block py-3 border-bottom">
                 <div class="container">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col">
-                            <div class="content--box height--600">
-                                <div style="background-image: url(&quot;assets/img/Depositphotos_212102332_ds.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;">
-                                    <div class="row justify-content-center w-100">
-                                        <div class="col-sm-auto">
-                                            <div class="bg-white shadow-sm py-3 px-4 py-sm-4 px-sm-5">
-                                                <h2 class="text-center mb-4">Osobiste stylizacje&nbsp;<br>dla każdego</h2><a class="btn btn-danger btn-block btn-lg text-uppercase text-white rounded-0" role="button" href="quiz.html">Rozpocznij Quiz</a></div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <ol class="breadcrumb rounded-0 p-0 bg-transparent mb-0">
+                                <li class="breadcrumb-item"><a class="text-secondary" href="index.html"><span>Strona główna</span></a></li>
+                                <li class="breadcrumb-item"><a class="text-secondary"><span>Quiz</span></a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light pt-3">
+                <div class="container">
+                    <ul class="nav nav-tabs justify-content-center align-items-end border-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-black-50 d-flex align-items-center px--30 py--15" href="#">
+                                <div class="border rounded-circle content--box width--30 mr-3">
+                                    <div><span class="h5 mb-0">1</span></div>
+                                </div><span class="h3 mb-0">Sylwetka</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex align-items-center px--30 py--15" href="#">
+                                <div class="text-black-50 border rounded-circle content--box width--30 mr-3">
+                                    <div><span class="h5 mb-0">2</span></div>
+                                </div><span class="h3 mb-0">Kolor</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black-50 d-flex align-items-center px--30 py--15" href="#">
+                                <div class="border rounded-circle content--box width--30 mr-3">
+                                    <div><span class="h5 mb-0">3</span></div>
+                                </div><span class="h3 mb-0">Preferencje</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-none d-lg-block py-4 border-bottom">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <h4 class="text-center mb-3">Pytania 15-19</h4>
+                            <div class="progress">
+                                <div class="progress-bar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="py-3 border-top">
+            <div class="py-5">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-md-6 col-lg-4 d-flex py-3">
-                            <div class="card w-100">
-                                <div class="card-body py-4">
-                                    <h3 class="text-center card-title mb-3">Wypełnij &nbsp;ankietę</h3>
-                                    <p class="lead text-center card-text font-weight-light mb-0">Odpowiedz na kilka pytań dotyczących rozmiaru, dopasowania i preferencji cenowych.<br></p>
+                        <div class="col-lg-10 col-xl-8">
+                            <form id="quiz__tabs" class="tab-content">
+                                <div class="mb-5">
+                                    <div>
+                                        <h3 class="text-center mb-3">Twoje preferowane kolory w garderobie</h3>
+                                        <div class="form-row justify-content-center">
+                                            <div class="col-auto">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-checkbox custom-control--centered"><input type="checkbox" class="custom-control-input"><span class="text-center custom-control-label"><span class="text-success d-block"><i class="fas fa-square-full" style="font-size: 75px;"></i></span></span></label></div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-checkbox custom-control--centered"><input type="checkbox" class="custom-control-input"><span class="text-center custom-control-label"><span class="text-danger d-block"><i class="fas fa-square-full" style="font-size: 75px;"></i></span></span></label></div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-checkbox custom-control--centered"><input type="checkbox" class="custom-control-input"><span class="text-center custom-control-label"><span class="text-warning d-block"><i class="fas fa-square-full" style="font-size: 75px;"></i></span></span></label></div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-checkbox custom-control--centered"><input type="checkbox" class="custom-control-input"><span class="text-center custom-control-label"><span class="text-info d-block"><i class="fas fa-square-full" style="font-size: 75px;"></i></span></span></label></div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-checkbox custom-control--centered"><input type="checkbox" class="custom-control-input"><span class="text-center custom-control-label"><span class="text-light d-block"><i class="fas fa-square-full" style="font-size: 75px;"></i></span></span></label></div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-checkbox custom-control--centered"><input type="checkbox" class="custom-control-input"><span class="text-center custom-control-label"><span class="text-dark d-block"><i class="fas fa-square-full" style="font-size: 75px;"></i></span></span></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h3 class="text-center mb-3"><br>Jaki jest Twój naturalny (niefarbowany) kolor włosów?<br></h3>
+                                        <div class="form-row justify-content-center align-items-center">
+                                            <div class="col-sm-6"><select class="form-control"><option value="12" selected="">Wybierz</option><option value="13">czarne</option><option value="14">mysi blond</option><option value="">złoty blond</option><option value="">blond</option><option value="">rude</option><option value="">jasny brąz</option><option value="">ciemny brąz</option></select></div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h3 class="text-center mb-3"><br>Jak Twoje włosy reagują na słońce?<br></h3>
+                                        <div class="form-row justify-content-center align-items-center">
+                                            <div class="col-sm-6"><select class="form-control"><option value="12" selected="">Wybierz</option><option value="">łapią złote refleksy</option><option value="">płowieją</option><option value="">jasnieją w chłodnej tonacji</option><option value="">nic się nie dzieje</option></select></div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h3 class="text-center mb-3"><br>Jak Twoja skóra reaguje na słońce<br></h3>
+                                        <div class="form-row justify-content-center align-items-center">
+                                            <div class="col-sm-6"><select class="form-control"><option value="12" selected="">Wybierz</option><option value="">łapią złote refleksy</option><option value="">płowieją</option><option value="">jasnieją w chłodnej tonacji</option><option value="">nic się nie dzieje</option></select></div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h3 class="text-center mb-3"><br>Czy masz piegi?<br></h3>
+                                        <div class="form-row justify-content-center">
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-radio custom-control--centered"><input type="radio" class="custom-control-input" name="radio"><span class="text-center custom-control-label"><span class="d-block">mam je cały rok</span></span></label></div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-radio custom-control--centered"><input type="radio" class="custom-control-input" name="radio"><span class="text-center custom-control-label"><span class="d-block">występują sezonowo</span></span></label></div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-radio custom-control--centered"><input type="radio" class="custom-control-input" name="radio"><span class="text-center custom-control-label"><span class="d-block">mam szaro-brunatne piegi</span></span></label></div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group"><label class="d-flex flex-column align-items-center custom-control custom-radio custom-control--centered"><input type="radio" class="custom-control-input" name="radio"><span class="text-center custom-control-label"><span class="d-block">mam złote piegi</span></span></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 d-flex py-3">
-                            <div class="card w-100">
-                                <div class="card-body py-4">
-                                    <h3 class="text-center card-title mb-3">Odkryj nowe stylizacje<br></h3>
-                                    <p class="lead text-center card-text font-weight-light mb-0">Otrzymaj wyselekcjonowane przez naszych stylistów &nbsp;propozycje ubrań specjalnie dla Ciebie.<br></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 d-flex py-3">
-                            <div class="card w-100">
-                                <div class="card-body py-4">
-                                    <h3 class="text-center card-title mb-3">Otrzymaj ofertę<br></h3>
-                                    <p class="lead text-center card-text font-weight-light mb-0">Otrzymaj ofertę na zakup zestawu ubrań, które Ci się podobają. Zamów.<br>Wysyłka jest bezpłatna.<br></p>
-                                </div>
-                            </div>
+                                <div class="d-flex justify-content-center"><a class="btn btn-lg text-uppercase text-black-50 rounded-0" role="button" href="quiz-4.html" data-toggle="tab"><i class="icon-arrow-left-circle mr-2"></i><span>Powrót</span></a><a class="btn btn-primary btn-lg text-uppercase rounded-0"
+                                        role="button" href="quiz-6.html" data-toggle="tab"><span>Dalej</span><i class="icon-arrow-right-circle ml-2"></i></a></div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="border-top py-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="row">
-                                    <div class="col py-3">
-                                        <h2 class="text-center text-lg-left h5 font-weight-bold"><img class="img-fluid height--20" src="assets/img/logo.svg"></h2>
-                                        <p class="lead text-center text-lg-left mb-0 font-weight-light">Stylingo to program dobierający indywidualne stylizacje dopasowane do Twojego stylu, sylwetki i typu urody. Wypełnij ankietę online i ciesz się wspaniałymi zestawami przygotowanymi przez osobistych stylistów specjalnie
-                                            dla Ciebie!<br></p>
-                                    </div>
-                                    <div class="col-12 col-lg-auto">
-                                        <div class="row justify-content-center">
-                                            <div class="col-sm-4 col-lg-auto py-3">
-                                                <h3 class="text-center text-lg-left h5">Stylingo</h3>
-                                                <ul class="list-unstyled text-center text-lg-left mb-0">
-                                                    <li><a class="text-left text-dark" href="client-auth.html">Zaloguj</a></li>
-                                                    <li><a class="text-dark" href="quiz.html">Rozwiąż Quiz</a></li>
-                                                    <li><a class="text-dark" href="stylist-auth.html">Dla Stylisty</a></li>
-                                                </ul>
+            <div id="footer__stylingo">
+                <div class="border-top py-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex justify-content-center"><button class="btn text-uppercase text-black-50 rounded-0 p-0" type="button" data-toggle="collapse" data-target="#collapse__footer"><i class="icon-plus mr-2"></i><span>Więcej informacji</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapse__footer" class="collapse">
+                    <div class="border-top py-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col py-3">
+                                                <h2 class="text-center text-lg-left h5 font-weight-bold"><img class="img-fluid height--20" src="assets/img/logo.svg"></h2>
+                                                <p class="lead text-center text-lg-left mb-0 font-weight-light">Stylingo to program dobierający indywidualne stylizacje dopasowane do Twojego stylu, sylwetki i typu urody. Wypełnij ankietę online i ciesz się wspaniałymi zestawami przygotowanymi przez osobistych stylistów
+                                                    specjalnie dla Ciebie!<br></p>
                                             </div>
-                                            <div class="col-sm-4 col-lg-auto py-3">
-                                                <h3 class="text-center text-lg-left h5">O nas</h3>
-                                                <ul class="list-unstyled text-center text-lg-left mb-0">
-                                                    <li><a class="text-left text-dark" href="about.html">Jak to działa</a></li>
-                                                    <li><a class="text-dark" href="faq.html">FAQ</a></li>
-                                                    <li><a class="text-dark" href="legal.html">Regulamin</a></li>
+                                            <div class="col-12 col-lg-auto">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-sm-4 col-lg-auto py-3">
+                                                        <h3 class="text-center text-lg-left h5 font-weight-bold">Stylingo</h3>
+                                                        <ul class="list-unstyled text-center text-lg-left mb-0">
+                                                            <li><a class="text-left text-dark" href="client-auth.html">Zaloguj</a></li>
+                                                            <li><a class="text-dark" href="quiz.html">Rozwiąż Quiz</a></li>
+                                                            <li><a class="text-dark" href="stylist-auth.html">Dla Stylisty</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-4 col-lg-auto py-3">
+                                                        <h3 class="text-center text-lg-left h5 font-weight-bold">O nas</h3>
+                                                        <ul class="list-unstyled text-center text-lg-left mb-0">
+                                                            <li><a class="text-left text-dark" href="about.html">Jak to działa</a></li>
+                                                            <li><a class="text-dark" href="faq.html">FAQ</a></li>
+                                                            <li><a class="text-dark" href="legal.html">Regulamin</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-auto py-3">
+                                                <ul class="list-inline d-flex justify-content-center align-items-center mb-0">
+                                                    <li class="list-inline-item mr-4"><a class="h4 mb-0" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li class="list-inline-item mr-4"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-instagram"></i></a></li>
+                                                    <li class="list-inline-item mr-0"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-auto py-3">
-                                        <ul class="list-inline d-flex justify-content-center align-items-center mb-0">
-                                            <li class="list-inline-item mr-4"><a class="h4 mb-0" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li class="list-inline-item mr-4"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li class="list-inline-item mr-0"><a class="text-primary h4 mb-0" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="row justify-content-lg-between">
-                                    <div class="col-lg-auto d-none d-lg-block order-1 order-lg-2 py-3">
-                                        <ul class="list-inline d-flex justify-content-center mb-0">
-                                            <li class="list-inline-item"><a href="privacy.html">Polityka prywatności</a></li>
-                                            <li class="list-inline-item"><a href="cookies.html">Polityka cookies</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-auto order-2 order-lg-1 py-3">
-                                        <ul class="list-inline d-flex flex-column align-items-center flex-lg-row mb-0">
-                                            <li class="list-inline-item">© 2020 Stylingo All rights reserved</li>
-                                            <li class="list-inline-item">Projekt i realizacja:&nbsp;<a href="#">KDMC</a></li>
-                                        </ul>
+                                    <div>
+                                        <div class="row justify-content-lg-between">
+                                            <div class="col-lg-auto d-none d-lg-block order-1 order-lg-2 py-3">
+                                                <ul class="list-inline d-flex justify-content-center mb-0">
+                                                    <li class="list-inline-item"><a href="privacy.html">Polityka prywatności</a></li>
+                                                    <li class="list-inline-item"><a href="cookies.html">Polityka cookies</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-auto order-2 order-lg-1 py-3">
+                                                <ul class="list-inline d-flex flex-column align-items-center flex-lg-row mb-0">
+                                                    <li class="list-inline-item">© 2020 Stylingo All rights reserved</li>
+                                                    <li class="list-inline-item">Projekt i realizacja:&nbsp;<a href="#">KDMC</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
