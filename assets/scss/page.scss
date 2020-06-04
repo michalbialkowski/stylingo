@@ -2,6 +2,10 @@
 
 body {
 	background: #e5e5e5;
+	
+	&.frontpage {
+		padding-top: 70px;
+	}
 }
 
 main {
@@ -13,9 +17,9 @@ table tr.bg-light {
 }
 
 #section__page__main__top {
-	background-color: #E4E4E1;
- 	background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
- 	background-blend-mode: normal, multiply;
+	background-color: #E5E5E5 !important;
+	background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(160,160,160,0.60) 100%);
+	background-blend-mode: normal, multiply;
 }
 
 #modal__quiz {
