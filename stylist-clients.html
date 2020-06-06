@@ -29,7 +29,7 @@
                     <div class="container">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto">
-                                <h1 class="mb-0"><a class="text-dark navbar-brand mr-0 p-0 mt-2 mr-1" href="index.html"><img class="img-fluid height--30" src="assets/img/logo.svg"></a><small class="h5 ml-2"><a class="text-dark" href="stylist-clients.html">Stylista</a></small></h1>
+                                <h1 class="mb-0"><a class="text-dark navbar-brand mr-0 p-0 mt-2 mr-1" href="index.html"><img class="img-fluid height--30" src="assets/img/logo.svg"></a><small class="h5 ml-2"><a class="text-dark" href="stylist-clients.html">Panel stylisty</a></small></h1>
                             </div>
                             <div class="col-auto d-flex">
                                 <div class="d-flex align-items-center">
@@ -81,9 +81,14 @@
                         <div class="col">
                             <div class="btn-toolbar justify-content-between">
                                 <div class="btn-group btn-group-sm mr-2" role="group"><a class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" role="button" href="stylist-clients-profile.html"><i class="icon-plus mr-2"></i><span>Dodaj klienta</span></a></div>
-                                <div class="btn-group btn-group-sm"
+                                <div class="btn-group btn-group-sm flex-wrap"
                                     role="group"><button class="btn btn-light text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-list mr-2"></i><span>Widok listy</span></button><button class="btn btn-dark text-uppercase d-flex align-items-center rounded-0 mr-2"
-                                        type="button"><i class="icon-grid mr-2"></i><span>Widok siatki</span></button><button class="btn btn-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-magnifier mr-2"></i><span>Wyszukaj</span></button></div>
+                                        type="button"><i class="icon-grid mr-2"></i><span>Widok siatki</span></button>
+                                    <div class="dropdown btn-group mr-2" role="group"><button class="btn btn-dark dropdown-toggle text-uppercase" data-toggle="dropdown" aria-expanded="false" type="button"><i class="icon-eye mr-2"></i><span>Ostatnio przeglądane</span></button>
+                                        <div class="dropdown-menu"
+                                            role="menu"><a class="dropdown-item" role="presentation" href="#">Ostatnio przeglądane</a><a class="dropdown-item" role="presentation" href="#">Ostatnio zarejestrowane</a>
+                                            <div class="dropdown-divider" role="presentation"></div><span class="dropdown-item-text text-black-50" role="presentation">Wg nazwiska</span><a class="dropdown-item" role="presentation" href="#">A-Z</a><a class="dropdown-item" role="presentation" href="#">Z-A</a></div>
+                                    </div><button class="btn btn-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-magnifier mr-2"></i><span>Wyszukaj</span></button></div>
                             </div>
                         </div>
                     </div>
@@ -95,9 +100,10 @@
                         <table class="table mb-0">
                             <thead>
                                 <tr class="bg-light">
-                                    <th>Tytuł</th>
+                                    <th>Imię i nazwisko</th>
                                     <th>Miejscowość</th>
                                     <th>Wiek</th>
+                                    <th>Zarejestrowano</th>
                                     <th class="text-right">Akcje</th>
                                 </tr>
                             </thead>
@@ -106,6 +112,7 @@
                                     <th><a href="stylist-clients-profile.html">Adam Nowak</a></th>
                                     <td>Warszawa</td>
                                     <td>24 lata</td>
+                                    <td>10.04.2020</td>
                                     <td class="text-right">
                                         <div class="btn-toolbar justify-content-end">
                                             <div class="btn-group btn-group-sm ml-2" role="group"><a class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" role="button" href="stylist-clients-profile.html"><i class="icon-pencil mr-2"></i><span>Edytuj</span></a></div>
