@@ -73,129 +73,57 @@
                 </div>
             </div>
         </header>
-        <main class="pb--90">
+        <main>
             <div class="bg-light" id="section__page__main__top">
                 <div class="container">
-                    <div class="row justify-content-between align-items-center">
+                    <div class="row justify-content-between">
                         <div class="col-auto my-3">
-                            <div class="d-flex align-items-baseline flex-wrap">
-                                <h2 class="h3 mb-0 mr-2">Asortyment</h2>
+                            <div class="d-flex align-items-baseline">
+                                <h2 class="h3 mb-0 mr-2">Styliści</h2>
                                 <ol class="breadcrumb bg-transparent border-0 rounded-0 p-0 mb-0">
-                                    <li class="breadcrumb-item"><a class="text-black-50"><span class="h5 mb-0">Edycja produktu</span></a></li>
-                                    <li class="breadcrumb-item"><a class="text-black-50"><span class="h5 mb-0">Dane produktu</span></a></li>
+                                    <li class="breadcrumb-item"><a class="text-black-50"><span class="h5 mb-0">Lista administratorów</span></a></li>
                                 </ol>
                             </div>
-                        </div>
-                        <div class="col-auto align-self-end">
-                            <ul class="nav nav-tabs border-bottom-0 font-weight-bold">
-                                <li class="nav-item"><a class="nav-link active text-dark" href="admin-products-edit.html">Dane produktu</a></li>
-                                <li class="nav-item"><a class="nav-link text-black-50" href="admin-products-edit-photos.html">Zdjęcia</a></li>
-                                <li class="nav-item"><a class="nav-link text-black-50" href="admin-products-edit-attributes.html">Cechy</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <form>
-                    <div class="bg-white shadow-sm py-3 border-bottom">
-                        <div class="container">
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="btn-toolbar justify-content-between">
-                                        <div class="btn-group btn-group-sm mr-2" role="group"><a class="btn btn-dark text-uppercase d-flex align-items-center rounded-0" role="button" href="admin-products.html"><i class="icon-action-undo mr-2"></i><span>Powrót</span></a></div>
-                                        <div class="btn-group btn-group-sm"
-                                            role="group"><button class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-check mr-2"></i><span>Zapisz</span></button></div>
-                                    </div>
-                                </div>
+            <div class="bg-white shadow-sm py-3 border-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="btn-toolbar justify-content-between">
+                                <div class="btn-group btn-group-sm" role="group"><a class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" role="button" href="admin-stylists-edit.html"><i class="icon-plus mr-2"></i><span>Dodaj administratora</span></a></div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="container">
-                            <div class="form-row">
-                                <div class="col order-1 order-lg-2 py-3">
-                                    <form>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="form-row">
-                                                        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Nazwa</label></div>
-                                                        <div class="col"><input class="form-control" type="text" value="Garnitur"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <div class="container">
+                    <div class="table-responsive bg-white shadow-sm mb-3">
+                        <table class="table mb-0">
+                            <thead>
+                                <tr class="bg-light">
+                                    <th>Tytuł</th>
+                                    <th class="text-right">Akcje</th>
+                                </tr>
+                            </thead>
+                            <tbody class="vertical--middle">
+                                <tr>
+                                    <th><a href="admin-stylists-edit.html">Adam Nowak</a></th>
+                                    <td class="text-right">
+                                        <div class="btn-toolbar justify-content-end">
+                                            <div class="btn-group btn-group-sm ml-2" role="group"><a class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" role="button" href="admin-stylists-edit.html"><i class="icon-pencil mr-2"></i><span>Edytuj</span></a></div>
+                                            <div class="btn-group btn-group-sm ml-2"
+                                                role="group"><button class="btn btn-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-trash mr-2"></i><span>Usuń</span></button></div>
                                         </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="form-row">
-                                                        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Kategoria</label></div>
-                                                        <div class="col"><select class="form-control" value="Obuwie"><option value="13">Kobiety</option><option value="">&gt; Odzież</option><option value="">&gt; Obuwie</option><option value="14">Mężczyźni</option><option value="">&gt; Odzież</option><option value="" selected="">&gt;&gt; Garnitury</option></select></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="form-row">
-                                                        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Marka</label></div>
-                                                        <div class="col"><select class="form-control"><option value="" selected=""></option><option value="13" selected="">Pierre Cardin</option><option value="14">Wólczanka</option></select></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="form-row">
-                                                        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Rozmiar</label></div>
-                                                        <div class="col"><select class="form-control"><option value="" selected=""></option><option value="13">S</option><option value="14" selected="">M</option><option value="">L</option><option value="">XL</option><option value="">XXL</option></select></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="form-row">
-                                                        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Cena</label></div>
-                                                        <div class="col">
-                                                            <div class="input-group"><input class="form-control" type="text" value="2149.99">
-                                                                <div class="input-group-append"><span class="input-group-text">zł</span></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="form-row">
-                                                        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Krótki opis</label></div>
-                                                        <div class="col"><textarea class="form-control" rows="4">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</textarea></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="form-row">
-                                                        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2"><label class="col-form-label">Pełny opis</label></div>
-                                                        <div class="col-sm-9 col-md-9 col-lg-10 col-xl-10"><textarea class="form-control" id="editor" rows="4">&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</textarea></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </form>
+                </div>
             </div>
         </main>
         <div id="section__page__modals">
