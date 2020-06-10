@@ -181,16 +181,18 @@
                                             <td colspan="2">
                                                 <div>
                                                     <ul class="nav nav-tabs">
-                                                        <li class="nav-item"><a class="nav-link active text-dark" role="tab" data-toggle="tab" href="#tab-1"><span class="d-flex align-items-center"><i class="icon-question mr-2"></i><span class="font-weight-bold">Pytanie</span></span></a></li>
+                                                        <li class="nav-item"><a class="nav-link text-dark" role="tab" data-toggle="tab" href="#tab-1"><span class="d-flex align-items-center"><i class="icon-question mr-2"></i><span class="font-weight-bold">Pytanie</span></span></a></li>
                                                         <li
                                                             class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-2"><span class="d-flex align-items-center"><i class="icon-pencil mr-2"></i><span class="font-weight-bold">Nagłówek</span></span></a></li>
                                                             <li
                                                                 class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-3"><span class="d-flex align-items-center"><i class="icon-note mr-2"></i><span class="font-weight-bold">Tekst</span></span></a></li>
                                                                 <li
-                                                                    class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-4"><span class="d-flex align-items-center"><i class="icon-layers mr-2"></i><span class="font-weight-bold">Podział sekcji</span></span></a></li>
+                                                                    class="nav-item"><a class="nav-link active text-black-50" role="tab" data-toggle="tab" href="#tab-5"><span class="d-flex align-items-center"><i class="icon-picture mr-2"></i><span class="font-weight-bold">Grafika</span></span></a></li>
+                                                                    <li
+                                                                        class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-4"><span class="d-flex align-items-center"><i class="icon-layers mr-2"></i><span class="font-weight-bold">Podział sekcji</span></span></a></li>
                                                     </ul>
                                                     <div class="tab-content bg-white p-3 border-left border-bottom border-right">
-                                                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                                        <div class="tab-pane" role="tabpanel" id="tab-1">
                                                             <form class="form-inline d-flex flex-nowrap"><select class="form-control form-control form-control-sm w-100 mr-2"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select>
                                                                 <label
                                                                     class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100" name="order"><option value="0">Na początku sekcji</option><option value="1">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
@@ -206,6 +208,12 @@
                                                         </div>
                                                         <div class="tab-pane" role="tabpanel" id="tab-3">
                                                             <form class="form-inline d-flex flex-nowrap"><input class="form-control form-control-sm w-100 mr-2" type="text"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
+                                                                <button
+                                                                    class="btn btn-primary btn-sm text-uppercase text-white d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
+                                                            </form>
+                                                        </div>
+                                                        <div class="tab-pane active" role="tabpanel" id="tab-5">
+                                                            <form class="form-inline d-flex align-items-center flex-nowrap"><input type="file" class="mr-2"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
                                                                 <button
                                                                     class="btn btn-primary btn-sm text-uppercase text-white d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
                                                             </form>
