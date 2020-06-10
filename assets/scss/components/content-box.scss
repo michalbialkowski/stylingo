@@ -37,6 +37,10 @@
 	&.format--2-3:after {
 		padding-bottom: calc(100% * 3 / 2);
 	}
+	
+	&.format--3-4:after {
+		padding-bottom: calc(100% * 4 / 3);
+	}
 		
 	> * {
 		position: absolute;
