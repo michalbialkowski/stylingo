@@ -115,7 +115,7 @@
                                         <table class="table mb-0">
                                             <thead>
                                                 <tr class="bg-light">
-                                                    <th class="width--320">Element</th>
+                                                    <th>Element</th>
                                                     <th>Treść</th>
                                                     <th>Rodzaj</th>
                                                     <th class="text-right">Akcje</th>
@@ -128,149 +128,167 @@
                                                             <div class="d-flex flex-column mr-2"><button class="btn rounded-0 p-0" type="button" style="line-height: 0;"><i class="icon-arrow-up"></i></button><button class="btn rounded-0 p-0" type="button" style="line-height: 0;"><i class="icon-arrow-down"></i></button></div><span>Pytanie</span></div>
                                                     </th>
                                                     <td><span class="d-block">Ile masz wzrostu?</span><small class="text-black-50 d-block mt-1"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non eros auctor, viverra enim non, tempor neque</em><br></small></td>
-                                                    <td><span class="d-block">Pojedynczy wybór</span><span class="mt-1 font-weight-bold">Tekst<br></span></td>
-                                                    <td class="text-right">
+                                                    <td><span class="d-block">Pojedynczy wybór</span><small class="mt-1 font-weight-bold">Tekst<br></small></td>
+                                                    <td class="text-right pb-1">
                                                         <div class="btn-toolbar justify-content-end">
-                                                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-dark text-uppercase d-flex align-items-center rounded-0 mr-2" type="button"><i class="icon-organization mr-2"></i><span class="border-light">Warunki</span></button>
-                                                                <div
-                                                                    class="dropleft btn-group" role="group"><button class="btn btn-dark btn-sm dropdown-toggle text-uppercase d-flex align-items-center" data-toggle="dropdown" aria-expanded="false" type="button"><i class="icon-settings mr-2 ml-1"></i><span>Opcje</span></button>
+                                                            <div class="btn-group btn-group-sm justify-content-end flex-wrap" role="group">
+                                                                <div class="dropleft btn-group ml-2 mb-2" role="group"><button class="btn btn-dark btn-sm dropdown-toggle text-uppercase" data-toggle="dropdown" aria-expanded="false" type="button"><i class="icon-picture mr-2 ml-1"></i><span class="border-light">2 : 1</span></button>
                                                                     <div
-                                                                        class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin-quizzes-questions-edit.html">Edytuj pytanie</a><a class="dropdown-item" role="presentation" href="admin-quizzes-questions-edit-options.html">Edytuj opcje wyboru</a>
-                                                                        <div
-                                                                            class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">Usuń</a></div>
+                                                                        class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">3 : 1</a><a class="dropdown-item" role="presentation" href="#">2 : 1</a><a class="dropdown-item" role="presentation" href="#">16 : 9</a>
+                                                                        <a
+                                                                            class="dropdown-item" role="presentation" href="#">3 : 2</a><a class="dropdown-item" role="presentation" href="#">4 : 3</a>
+                                                                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">1 : 1</a>
+                                                                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">3 : 4</a><a class="dropdown-item" role="presentation" href="#">2 : 3</a></div>
+                                                            </div>
+                                                            <div class="dropleft btn-group ml-2 mb-2" role="group"><button class="btn btn-dark btn-sm dropdown-toggle text-uppercase" data-toggle="dropdown" aria-expanded="false" type="button"><i class="icon-grid mr-2 ml-1"></i><span class="border-light">3 kolumny</span></button>
+                                                                <div
+                                                                    class="dropdown-menu" role="menu">
+                                                                    <h6 class="dropdown-header text-dark" role="presentation">Ilość kolumn</h6><a class="dropdown-item" role="presentation" href="#">2 kolumny</a><a class="dropdown-item" role="presentation" href="#">3 kolumny</a><a class="dropdown-item" role="presentation"
+                                                                        href="#">4 kolumny</a>
+                                                                    <div class="dropdown-divider" role="presentation"></div>
+                                                                    <h6 class="dropdown-header text-dark" role="presentation">Szerokość kolumny</h6><a class="dropdown-item" role="presentation" href="#">100 px</a><a class="dropdown-item" role="presentation" href="#">150 px</a><a class="dropdown-item" role="presentation"
+                                                                        href="#">200 px</a><a class="dropdown-item" role="presentation" href="#">250 px</a><a class="dropdown-item" role="presentation" href="#">300 px</a></div>
+                                                        </div>
                                     </div>
+                                    <div class="btn-group btn-group-sm justify-content-end flex-wrap" role="group"><button class="btn btn-dark text-uppercase d-flex align-items-center rounded-0 ml-2 mb-2" type="button"><i class="icon-organization mr-2"></i><span class="border-light">Warunki</span></button>
+                                        <div class="dropleft btn-group ml-2 mb-2"
+                                            role="group"><button class="btn btn-dark btn-sm dropdown-toggle text-uppercase d-flex align-items-center" data-toggle="dropdown" aria-expanded="false" type="button"><i class="icon-settings mr-2 ml-1"></i><span>Opcje</span></button>
+                                            <div
+                                                class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin-quizzes-questions-edit.html">Edytuj pytanie</a><a class="dropdown-item" role="presentation" href="admin-quizzes-questions-edit-options.html">Edytuj opcje wyboru</a>
+                                                <div
+                                                    class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">Usuń</a></div>
                                 </div>
                             </div>
+                        </div>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td class="pt-0 border-top-0" colspan="4">
+                                <div class="bg-light p-2 border">
+                                    <form class="form-inline justify-content-between mb-2">
+                                        <div class="d-flex"><label class="text-black-50 mr-2">Widoczność</label><select class="form-control form-control-sm mr-2 text-uppercase width--120"><option value="" selected="">Nieaktywne</option><option value="show">Pokaż</option><option value="hide">Ukryj</option></select></div>
+                                        <button
+                                            class="btn btn-dark btn-sm text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-refresh mr-2"></i><span>Zaktualizuj widoczność</span></button>
+                                    </form>
+                                    <div class="table-responsive bg-white shadow-sm">
+                                        <table class="table table-sm mb-0 table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Jeżeli odpowiedź w pytaniu</th>
+                                                    <th>To</th>
+                                                    <th class="text-right">Akcje</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Twój preferowany rozmiar</td>
+                                                    <td>M</td>
+                                                    <td>
+                                                        <div class="btn-toolbar justify-content-end">
+                                                            <div class="btn-group btn-group-sm ml-2" role="group"><button class="btn btn-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-trash mr-2"></i><span>Usuń</span></button></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><select class="form-control form-control-sm"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
+                                                    <td><select class="form-control form-control-sm"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
+                                                    <td>
+                                                        <div class="btn-toolbar justify-content-end">
+                                                            <div class="btn-group btn-group-sm ml-2" role="group"><button class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </td>
-                            </tr>
-                            <tr>
-                                <td class="pt-0 border-top-0" colspan="4">
-                                    <div class="bg-light p-2 border">
-                                        <form class="form-inline justify-content-between mb-2">
-                                            <div class="d-flex"><label class="text-black-50 mr-2">Widoczność</label><select class="form-control form-control-sm mr-2 text-uppercase width--120"><option value="" selected="">Nieaktywne</option><option value="show">Pokaż</option><option value="hide">Ukryj</option></select></div>
-                                            <button
-                                                class="btn btn-dark btn-sm text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-refresh mr-2"></i><span>Zaktualizuj</span></button>
-                                        </form>
-                                        <div class="table-responsive bg-white shadow-sm">
-                                            <table class="table table-sm mb-0 table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Jeżeli odpowiedź w pytaniu</th>
-                                                        <th>To</th>
-                                                        <th class="text-right">Akcje</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Twój preferowany rozmiar</td>
-                                                        <td>M</td>
-                                                        <td>
-                                                            <div class="btn-toolbar justify-content-end">
-                                                                <div class="btn-group btn-group-sm ml-2" role="group"><button class="btn btn-dark text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-trash mr-2"></i><span>Usuń</span></button></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><select class="form-control form-control-sm"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
-                                                        <td><select class="form-control form-control-sm"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
-                                                        <td>
-                                                            <div class="btn-toolbar justify-content-end">
-                                                                <div class="btn-group btn-group-sm ml-2" role="group"><button class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="bg-light">
+                                <td colspan="4">
+                                    <div>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item"><a class="nav-link active text-dark" role="tab" data-toggle="tab" href="#tab-1"><span class="d-flex align-items-center"><i class="icon-question mr-2"></i><span class="font-weight-bold">Pytanie</span></span></a></li>
+                                            <li
+                                                class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-2"><span class="d-flex align-items-center"><i class="icon-pencil mr-2"></i><span class="font-weight-bold">Nagłówek</span></span></a></li>
+                                                <li
+                                                    class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-3"><span class="d-flex align-items-center"><i class="icon-note mr-2"></i><span class="font-weight-bold">Tekst</span></span></a></li>
+                                                    <li
+                                                        class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-5"><span class="d-flex align-items-center"><i class="icon-picture mr-2"></i><span class="font-weight-bold">Grafika</span></span></a></li>
+                                                        <li
+                                                            class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-4"><span class="d-flex align-items-center"><i class="icon-layers mr-2"></i><span class="font-weight-bold">Podział sekcji</span></span></a></li>
+                                        </ul>
+                                        <div class="tab-content bg-white p-3 border-left border-bottom border-right">
+                                            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                                <form class="form-inline d-flex flex-nowrap"><select class="form-control form-control form-control-sm w-100 mr-2"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select>
+                                                    <label
+                                                        class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100" name="order"><option value="0">Na początku sekcji</option><option value="1">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
+                                                        <button
+                                                            class="btn btn-primary btn-sm text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span class="text-nowrap">Dodaj</span></button>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="tab-2">
+                                                <form class="form-inline d-flex flex-nowrap"><input class="form-control form-control-sm w-100 mr-2" type="text"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
+                                                    <button
+                                                        class="btn btn-primary btn-sm text-uppercase text-white d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="tab-3">
+                                                <form class="form-inline d-flex flex-nowrap"><input class="form-control form-control-sm w-100 mr-2" type="text"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
+                                                    <button
+                                                        class="btn btn-primary btn-sm text-uppercase text-white d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="tab-5">
+                                                <form class="form-inline d-flex align-items-center flex-nowrap"><input type="file" class="mr-2"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
+                                                    <button
+                                                        class="btn btn-primary btn-sm text-uppercase text-white d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="tab-4">
+                                                <form class="form-inline d-flex flex-nowrap"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
+                                                    <button
+                                                        class="btn btn-primary btn-sm text-uppercase text-light d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr class="bg-light">
-                                    <td colspan="4">
-                                        <div>
-                                            <ul class="nav nav-tabs">
-                                                <li class="nav-item"><a class="nav-link text-dark" role="tab" data-toggle="tab" href="#tab-1"><span class="d-flex align-items-center"><i class="icon-question mr-2"></i><span class="font-weight-bold">Pytanie</span></span></a></li>
-                                                <li
-                                                    class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-2"><span class="d-flex align-items-center"><i class="icon-pencil mr-2"></i><span class="font-weight-bold">Nagłówek</span></span></a></li>
-                                                    <li
-                                                        class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-3"><span class="d-flex align-items-center"><i class="icon-note mr-2"></i><span class="font-weight-bold">Tekst</span></span></a></li>
-                                                        <li
-                                                            class="nav-item"><a class="nav-link active text-black-50" role="tab" data-toggle="tab" href="#tab-5"><span class="d-flex align-items-center"><i class="icon-picture mr-2"></i><span class="font-weight-bold">Grafika</span></span></a></li>
-                                                            <li
-                                                                class="nav-item"><a class="nav-link text-black-50" role="tab" data-toggle="tab" href="#tab-4"><span class="d-flex align-items-center"><i class="icon-layers mr-2"></i><span class="font-weight-bold">Podział sekcji</span></span></a></li>
-                                            </ul>
-                                            <div class="tab-content bg-white p-3 border-left border-bottom border-right">
-                                                <div class="tab-pane" role="tabpanel" id="tab-1">
-                                                    <form class="form-inline d-flex flex-nowrap"><select class="form-control form-control form-control-sm w-100 mr-2"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select>
-                                                        <label
-                                                            class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100" name="order"><option value="0">Na początku sekcji</option><option value="1">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
-                                                            <button
-                                                                class="btn btn-primary btn-sm text-uppercase d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span class="text-nowrap">Dodaj</span></button>
-                                                    </form>
-                                                </div>
-                                                <div class="tab-pane" role="tabpanel" id="tab-2">
-                                                    <form class="form-inline d-flex flex-nowrap"><input class="form-control form-control-sm w-100 mr-2" type="text"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
-                                                        <button
-                                                            class="btn btn-primary btn-sm text-uppercase text-white d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
-                                                    </form>
-                                                </div>
-                                                <div class="tab-pane" role="tabpanel" id="tab-3">
-                                                    <form class="form-inline d-flex flex-nowrap"><input class="form-control form-control-sm w-100 mr-2" type="text"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
-                                                        <button
-                                                            class="btn btn-primary btn-sm text-uppercase text-white d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
-                                                    </form>
-                                                </div>
-                                                <div class="tab-pane active" role="tabpanel" id="tab-5">
-                                                    <form class="form-inline d-flex align-items-center flex-nowrap"><input type="file" class="mr-2"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
-                                                        <button
-                                                            class="btn btn-primary btn-sm text-uppercase text-white d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
-                                                    </form>
-                                                </div>
-                                                <div class="tab-pane" role="tabpanel" id="tab-4">
-                                                    <form class="form-inline d-flex flex-nowrap"><label class="text-nowrap mr-2">Dodaj po</label><select class="form-control form-control form-control-sm mr-2 w-100"><option value="14">Na początku sekcji</option><option value="12">Jaki masz kolor włosów</option><option value="" selected="">Na końcu sekcji</option></select>
-                                                        <button
-                                                            class="btn btn-primary btn-sm text-uppercase text-light d-flex align-items-center rounded-0" type="button"><i class="icon-plus mr-2"></i><span>Dodaj</span></button>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tfoot>
-                            </table>
-                        </div>
+                        </tfoot>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-xl-3 order-2 order-lg-1 mb-3">
-                <div class="card shadow-sm hyphens--auto rounded-0">
-                    <div class="card-header text-light bg-dark">
-                        <h5 class="mb-0">Sekcje</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-column mr-2"><button class="btn rounded-0 p-0" type="button" style="line-height: 0;"><i class="icon-arrow-up"></i></button><button class="btn rounded-0 p-0" type="button" style="line-height: 0;"><i class="icon-arrow-down"></i></button></div>
-                                    <a
-                                        class="text-dark mr-3 font-weight-bold" href="#">Sylwetka</a>
-                                </div>
-                                <div class="dropdown"><button class="btn btn-sm dropdown-toggle text-black-50 align-items-center rounded-0 p-0" data-toggle="dropdown" aria-expanded="false" type="button"><i class="icon-settings mr-1"></i></button>
-                                    <div class="dropdown-menu"
-                                        role="menu"><a class="dropdown-item" role="presentation" href="#">Dodaj ekran</a><a class="dropdown-item" role="presentation" href="#">Edytuj</a><a class="dropdown-item" role="presentation" href="#">Usuń</a></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="card-footer">
-                        <div class="btn-toolbar">
-                            <div class="btn-group btn-group-sm" role="group"><button class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" type="button" data-toggle="modal" data-target="#modal__section__add"><i class="icon-plus mr-2"></i><span>Dodaj sekcję</span></button></div>
+    </div>
+    <div class="col-lg-4 col-xl-3 order-2 order-lg-1 mb-3">
+        <div class="card shadow-sm hyphens--auto rounded-0">
+            <div class="card-header text-light bg-dark">
+                <h5 class="mb-0">Sekcje</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex flex-column mr-2"><button class="btn rounded-0 p-0" type="button" style="line-height: 0;"><i class="icon-arrow-up"></i></button><button class="btn rounded-0 p-0" type="button" style="line-height: 0;"><i class="icon-arrow-down"></i></button></div>
+                            <a
+                                class="text-dark mr-3 font-weight-bold" href="#">Sylwetka</a>
+                        </div>
+                        <div class="dropdown"><button class="btn btn-sm dropdown-toggle text-black-50 align-items-center rounded-0 p-0" data-toggle="dropdown" aria-expanded="false" type="button"><i class="icon-settings mr-1"></i></button>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Dodaj ekran</a><a class="dropdown-item" role="presentation" href="#">Edytuj</a><a class="dropdown-item" role="presentation" href="#">Usuń</a></div>
                         </div>
                     </div>
+                </li>
+            </ul>
+            <div class="card-footer">
+                <div class="btn-toolbar">
+                    <div class="btn-group btn-group-sm" role="group"><button class="btn btn-primary text-uppercase d-flex align-items-center rounded-0" type="button" data-toggle="modal" data-target="#modal__section__add"><i class="icon-plus mr-2"></i><span>Dodaj sekcję</span></button></div>
                 </div>
             </div>
+        </div>
+    </div>
     </div>
     </div>
     </div>
