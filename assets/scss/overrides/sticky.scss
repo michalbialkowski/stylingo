@@ -7,6 +7,7 @@
 .sticky-wrapper.is-sticky {
 	#sticker {
 		border-top: 1px solid #dee2e6 !important;
+		background: white;
 		
 		#stylist__client__menu {
 			display: block !important;
@@ -14,6 +15,10 @@
 		
 		#client__set__description {
 			display: none !important;
+		}
+		
+		.sticky--disabled {
+			display: none;
 		}
 	}
 }
